@@ -1,0 +1,16 @@
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\bin\Debug\Nekretninte Class.exe.config
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\bin\Debug\Nekretninte Class.exe
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\bin\Debug\Nekretninte Class.pdb
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.dll
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.Support.dll
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.xml
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.Support.xml
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form1.resources
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Properties.Resources.resources
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.GenerateResource.Cache
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CoreCompileInputs.cache
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.exe
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.pdb
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form2.resources
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csprojAssemblyReference.cache
+C:\Users\wukas\Desktop\Learning\Privat\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete
