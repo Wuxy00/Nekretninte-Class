@@ -37,10 +37,11 @@ namespace Nekretninte_Class
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-            
+        {  
             AllTextInputForms EneterPrice = new AllTextInputForms();
             EneterPrice.Procced(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
+            SrbijaNekretnineOglas EnterAllSrbiaNek = new SrbijaNekretnineOglas();
+            EnterAllSrbiaNek.Procede(PublicVar.driver1, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, comboBox1.Text);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -10,7 +10,7 @@
  *
  * Hardware    :
  *
- * Description : Login on a site
+ * Description : Login on 4zida.rs
  *               
  *
  *****************************************************************************/

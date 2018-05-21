@@ -24,5 +24,6 @@ namespace Nekretninte_Class
     class PublicVar
     {
         public static IWebDriver driver = new ChromeDriver();
+        public static IWebDriver driver1 = new ChromeDriver();
     }
 }

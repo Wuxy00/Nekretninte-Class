@@ -74,6 +74,8 @@
             this.rtbOpis = new System.Windows.Forms.RichTextBox();
             this.PhotoSelectDialog = new System.Windows.Forms.OpenFileDialog();
             this.button3 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lSprat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbKat
@@ -81,7 +83,7 @@
             this.cbKat.FormattingEnabled = true;
             this.cbKat.Items.AddRange(new object[] {
             "Stan",
-            "Kuca",
+            "Kuća",
             "Garaza",
             "Plac",
             "Poslovni prostor"});
@@ -461,11 +463,51 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.comboBox1.Location = new System.Drawing.Point(312, 49);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 46;
+            // 
+            // lSprat
+            // 
+            this.lSprat.AutoSize = true;
+            this.lSprat.Location = new System.Drawing.Point(309, 22);
+            this.lSprat.Name = "lSprat";
+            this.lSprat.Size = new System.Drawing.Size(32, 13);
+            this.lSprat.TabIndex = 47;
+            this.lSprat.Text = "Sprat";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 433);
+            this.Controls.Add(this.lSprat);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.rtbOpis);
             this.Controls.Add(this.tbDvoriste);
@@ -567,5 +609,7 @@
         private System.Windows.Forms.RichTextBox rtbOpis;
         private System.Windows.Forms.OpenFileDialog PhotoSelectDialog;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lSprat;
     }
 }
