@@ -40,7 +40,7 @@ namespace Nekretninte_Class
             driver.FindElement(By.Id("busLine")).SendKeys(busLine);
             driver.FindElement(By.Id("trolleyCarLine")).SendKeys(trolleyCarLine);
             driver.FindElement(By.Id("trolleybusLine")).SendKeys(trolleybusLine);
-            driver.FindElement(By.Id("desc")).SendKeys(desc);
+            driver.FindElement(By.Id("desc")).SendKeys(desc);            
         }
     }
 }
