@@ -190,5 +190,10 @@ namespace Nekretninte_Class
             Form1 loginScreen = new Form1();
             loginScreen.Show();
         }
+        UploadPics PicOnSite = new UploadPics();
+        private void button3_Click(object sender, EventArgs e)
+        {
+                PicOnSite.Submit(PublicVar.driver);
+        }
     }
 }
