@@ -33,62 +33,65 @@ namespace Nekretninte_Class
             //startSelection.Procced(PublicVar.driver,comboBox1.SelectedText);
             PlaceCategory FirstQA = new PlaceCategory();
             //FirstQA.Procced(PublicVar.driver, comboBox2.SelectedText);
+            button2.Enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
             AllTextInputForms EneterPrice = new AllTextInputForms();
-            EneterPrice.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox7.Text, textBox8.Text, textBox9.Text, textBox10.Text, textBox11.Text, textBox12.Text, textBox13.Text, textBox14.Text, textBox15.Text, textBox16.Text, textBox17.Text, textBox18.Text, textBox19.Text);
+            EneterPrice.Procced(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "Kuca")
+            VratiNaDefault();
+            if (cbKat.Text == "Kuca")
             {
-                textBox16.Hide();
-                textBox17.Hide();
-                textBox18.Hide();
+                tbAutobus.Hide();
+                tbTramvaj.Hide();
+                tbTrolejbus.Hide();
                 label16.Hide();
                 label17.Hide();
                 label18.Hide();
 
             }
-            else if(comboBox1.Text == "Poslovni prostor")
+            else if(cbKat.Text == "Poslovni prostor")
             {
-                textBox16.Hide();
-                textBox17.Hide();
-                textBox20.Hide();
-                textBox18.Hide();
+                tbAutobus.Hide();
+                tbTramvaj.Hide();
+                tbDvoriste.Hide();
+                tbTrolejbus.Hide();
                 label16.Hide();
                 label18.Hide();
                 label17.Hide();
                 label20.Hide();
             }
-            else if(comboBox1.Text == "Plac")
+            else if(cbKat.Text == "Plac")
             {
-                textBox1.Show();
-                textBox2.Show();
-                textBox3.Show();
-                textBox4.Show();
-                textBox5.Show();
-                textBox6.Show();
-                textBox7.Show();
-                textBox8.Show();
-                textBox9.Show();
-                textBox6.Hide();
-                textBox7.Hide();
-                textBox8.Hide();
-                textBox9.Hide();
-                textBox10.Hide();
-                textBox11.Hide();
-                textBox12.Hide();
-                textBox13.Hide();
-                textBox14.Hide();
-                textBox15.Hide();
-                textBox16.Hide();
-                textBox17.Hide();
-                textBox20.Hide();
-                textBox18.Hide();
+                tbCena.Show();
+                tbKvad.Show();
+                tbArea.Show();
+                tbAdresa.Show();
+                tbBroj.Show();
+                tbGodiste.Show();
+                tbBrojLodja.Show();
+                tbBrojTerasa.Show();
+                tbPrikTel.Show();
+                tbGodiste.Hide();
+                tbBrojLodja.Hide();
+                tbBrojTerasa.Hide();
+                tbPrikTel.Hide();
+                tbBrInterfon.Hide();
+                tbBrLift.Hide();
+                tbBrKup.Hide();
+                tbToal.Hide();
+                tbParking.Hide();
+                tbGaraza.Hide();
+                tbAutobus.Hide();
+                tbTramvaj.Hide();
+                tbDvoriste.Hide();
+                tbTrolejbus.Hide();
                 label6.Hide();
                 label7.Hide();
                 label8.Hide();
@@ -104,7 +107,7 @@ namespace Nekretninte_Class
                 label18.Hide();
                 label20.Hide();
             }
-            else if(comboBox1.Text == "Garaza")
+            else if(cbKat.Text == "Garaza")
             {
                 label6.Hide();
                 label7.Hide();
@@ -120,26 +123,72 @@ namespace Nekretninte_Class
                 label17.Hide();
                 label18.Hide();
                 label20.Hide();
-                textBox6.Hide();
-                textBox7.Hide();
-                textBox8.Hide();
-                textBox9.Hide();
-                textBox10.Hide();
-                textBox11.Hide();
-                textBox12.Hide();
-                textBox13.Hide();
-                textBox14.Hide();
-                textBox15.Hide();
-                textBox16.Hide();
-                textBox17.Hide();
-                textBox18.Hide();
-                textBox20.Hide();
+                tbGodiste.Hide();
+                tbBrojLodja.Hide();
+                tbBrojTerasa.Hide();
+                tbPrikTel.Hide();
+                tbBrInterfon.Hide();
+                tbBrLift.Hide();
+                tbBrKup.Hide();
+                tbToal.Hide();
+                tbParking.Hide();
+                tbGaraza.Hide();
+                tbAutobus.Hide();
+                tbTramvaj.Hide();
+                tbTrolejbus.Hide();
+                tbDvoriste.Hide();
             }
             else
             {
                 label20.Hide();
-                textBox20.Hide();
+                tbDvoriste.Hide();
             }
+        }
+        private void VratiNaDefault()
+        {
+            tbCena.Show();
+            tbKvad.Show();
+            tbArea.Show();
+            tbAdresa.Show();
+            tbBroj.Show();
+            tbGodiste.Show();
+            tbBrojLodja.Show();
+            tbBrojTerasa.Show();
+            tbPrikTel.Show();
+            tbGodiste.Show();
+            tbBrojLodja.Show();
+            tbBrojTerasa.Show();
+            tbPrikTel.Show();
+            tbBrInterfon.Show();
+            tbBrLift.Show();
+            tbBrKup.Show();
+            tbToal.Show();
+            tbParking.Show();
+            tbGaraza.Show();
+            tbAutobus.Show();
+            tbTramvaj.Show();
+            tbDvoriste.Show();
+            tbTrolejbus.Show();
+            label6.Show();
+            label7.Show();
+            label8.Show();
+            label9.Show();
+            label10.Show();
+            label11.Show();
+            label12.Show();
+            label13.Show();
+            label14.Show();
+            label15.Show();
+            label16.Show();
+            label17.Show();
+            label18.Show();
+            label20.Show();
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form1 loginScreen = new Form1();
+            loginScreen.Show();
         }
     }
 }

@@ -17,6 +17,7 @@ namespace Nekretninte_Class
             //start.End();
             Form2 form2 = new Form2(); // Nextform
             form2.Show();
+            this.Hide();
         }
     }
 }
