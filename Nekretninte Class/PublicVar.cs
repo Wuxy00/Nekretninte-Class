@@ -17,13 +17,11 @@
  *****************************************************************************/
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.CodeDom;
 
 namespace Nekretninte_Class
 {
     class PublicVar
     {
-        //dicko feget
         public static IWebDriver driver = new ChromeDriver();
     }
 }
