@@ -25,12 +25,12 @@ namespace Nekretninte_Class
         {
             InitializeComponent();
         }
-
+        string[] paths = new string[100];
         private void button1_Click(object sender, EventArgs e)
         {
             SelectFromStructureGroup1 startSelection = new SelectFromStructureGroup1(); // Select type of selling place
             startSelection.Setup(PublicVar.driver);
-            //startSelection.Procced(PublicVar.driver,comboBox1.SelectedText);
+            //startSelection.Procced(PublicVar.driver,comboBox1.SelectedText); // TO DOOOOO
             PlaceCategory FirstQA = new PlaceCategory();
             //FirstQA.Procced(PublicVar.driver, comboBox2.SelectedText);
         }
@@ -140,6 +140,25 @@ namespace Nekretninte_Class
                 label20.Hide();
                 textBox20.Hide();
             }
+        }
+        int i = 0;
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "jpg|*.jpg";
+            DialogResult dig = openFileDialog1.ShowDialog();
+            if (dig == DialogResult.OK)
+            {
+                paths[i] = dig.ToString();
+                i++;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            UploadPicture PicOnSite = new UploadPicture();
+            //PicOnSite.Setup(PublicVar.driver);
+            PicOnSite.Procced(PublicVar.driver, paths,i);
+            PicOnSite.Submit(PublicVar.driver);
         }
     }
 }
