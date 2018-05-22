@@ -30,7 +30,7 @@
         {
             this.cbKat = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbGrupa = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.tbCena = new System.Windows.Forms.TextBox();
             this.tbKvad = new System.Windows.Forms.TextBox();
@@ -86,7 +86,9 @@
             this.label25 = new System.Windows.Forms.Label();
             this.cbPurpose = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbUknjizeno = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.cbStanje = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cbKat
@@ -114,19 +116,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox2
+            // cbGrupa
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbGrupa.FormattingEnabled = true;
+            this.cbGrupa.Items.AddRange(new object[] {
             "Stan",
             "Apartman",
             "Salonac",
             "Penthaus",
             "Dvorisni stan"});
-            this.comboBox2.Location = new System.Drawing.Point(12, 49);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 2;
+            this.cbGrupa.Location = new System.Drawing.Point(12, 49);
+            this.cbGrupa.Name = "cbGrupa";
+            this.cbGrupa.Size = new System.Drawing.Size(121, 21);
+            this.cbGrupa.TabIndex = 2;
             // 
             // button2
             // 
@@ -523,6 +525,17 @@
             // cbBrSoba
             // 
             this.cbBrSoba.FormattingEnabled = true;
+            this.cbBrSoba.Items.AddRange(new object[] {
+            "Garsonjera",
+            "1,0",
+            "1,5",
+            "2,0",
+            "2,5",
+            "3,0",
+            "3,5",
+            "4,0",
+            "4,5",
+            "5,0"});
             this.cbBrSoba.Location = new System.Drawing.Point(12, 128);
             this.cbBrSoba.Name = "cbBrSoba";
             this.cbBrSoba.Size = new System.Drawing.Size(121, 21);
@@ -584,6 +597,10 @@
             // cbPurpose
             // 
             this.cbPurpose.FormattingEnabled = true;
+            this.cbPurpose.Items.AddRange(new object[] {
+            "Stambeni",
+            "Poslovni",
+            "Stambeno-poslovni"});
             this.cbPurpose.Location = new System.Drawing.Point(12, 205);
             this.cbPurpose.Name = "cbPurpose";
             this.cbPurpose.Size = new System.Drawing.Size(121, 21);
@@ -598,21 +615,45 @@
             this.label26.TabIndex = 58;
             this.label26.Text = "Uknjizeno";
             // 
-            // comboBox3
+            // cbUknjizeno
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(12, 245);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 57;
+            this.cbUknjizeno.FormattingEnabled = true;
+            this.cbUknjizeno.Items.AddRange(new object[] {
+            "Jeste",
+            "Delimicno",
+            "Nije",
+            "U postupku"});
+            this.cbUknjizeno.Location = new System.Drawing.Point(12, 245);
+            this.cbUknjizeno.Name = "cbUknjizeno";
+            this.cbUknjizeno.Size = new System.Drawing.Size(121, 21);
+            this.cbUknjizeno.TabIndex = 57;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(12, 271);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(37, 13);
+            this.label27.TabIndex = 60;
+            this.label27.Text = "Stanje";
+            // 
+            // cbStanje
+            // 
+            this.cbStanje.FormattingEnabled = true;
+            this.cbStanje.Location = new System.Drawing.Point(12, 287);
+            this.cbStanje.Name = "cbStanje";
+            this.cbStanje.Size = new System.Drawing.Size(121, 21);
+            this.cbStanje.TabIndex = 59;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 492);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.cbStanje);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbUknjizeno);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.cbPurpose);
             this.Controls.Add(this.label24);
@@ -666,7 +707,7 @@
             this.Controls.Add(this.tbKvad);
             this.Controls.Add(this.tbCena);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbGrupa);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbKat);
             this.Name = "Form2";
@@ -681,7 +722,7 @@
 
         private System.Windows.Forms.ComboBox cbKat;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbGrupa;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox tbCena;
         private System.Windows.Forms.TextBox tbKvad;
@@ -737,6 +778,8 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.ComboBox cbPurpose;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbUknjizeno;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.ComboBox cbStanje;
     }
 }
