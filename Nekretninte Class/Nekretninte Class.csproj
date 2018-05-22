@@ -69,7 +69,7 @@
     <Compile Include="NadjiDom.cs" />
     <Compile Include="NadjiDomLogin.cs" />
     <Compile Include="PlaceCategory.cs" />
-    <Compile Include="AllTextInputForms.cs" />
+    <Compile Include="CetriZida.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicVar.cs" />

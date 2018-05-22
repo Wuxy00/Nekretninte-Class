@@ -36,12 +36,14 @@ namespace Nekretninte_Class
 
         private void button2_Click(object sender, EventArgs e)
         {  
-            AllTextInputForms EneterFirst = new AllTextInputForms();
-            EneterFirst.Procced(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
+            CetriZida cetriZida = new CetriZida();
+            cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
+            //cetriZida.ProceedMultipleChoice(PublicVar.driver,)
             SrbijaNekretnineOglas EnterAllSrbiaNek = new SrbijaNekretnineOglas();
             EnterAllSrbiaNek.Procede(PublicVar.driver1, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, comboBox1.Text);
             NadjiDom EnterAllNadjiDom = new NadjiDom();
             EnterAllNadjiDom.Procede(PublicVar.driver2, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, comboBox2.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, tbDvoriste.Text, cbBrSoba.Text, cbGrejanje.Text);
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
