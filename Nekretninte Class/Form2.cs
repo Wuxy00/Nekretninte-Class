@@ -28,6 +28,7 @@ namespace Nekretninte_Class
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //TODOOOOOO bug 4zida.rs login drugaciji od drugih // NeMenjaNISSTA!!!!!!!!!!!!!! u ovom BUTTON-u!!!!!!!
             SelectFromStructureGroup1 startSelection = new SelectFromStructureGroup1(); // Select type of selling place
             startSelection.Setup(PublicVar.driver);
             PlaceCategory FirstQA = new PlaceCategory();

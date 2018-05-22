@@ -14,11 +14,6 @@
  *               
  *
  *****************************************************************************/
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 
 namespace Nekretninte_Class
@@ -29,7 +24,6 @@ namespace Nekretninte_Class
         public void Setup(IWebDriver driver)
         {
             driver.Url = url;
-            //driver.Navigate().GoToUrl(url);
         }
         public void Procede(IWebDriver driver, string username, string password)
         {

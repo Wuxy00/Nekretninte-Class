@@ -25,7 +25,6 @@ namespace Nekretninte_Class
         public void Setup(IWebDriver driver)
         {
             driver.Url = url;
-            driver.Navigate().GoToUrl(url);
         }
         public void End(IWebDriver driver)
         {
