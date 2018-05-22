@@ -76,6 +76,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lSprat = new System.Windows.Forms.Label();
+            this.cbSprat = new System.Windows.Forms.ComboBox();
+            this.cbBrSoba = new System.Windows.Forms.ComboBox();
+            this.cbGrejanje = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cbKat
@@ -501,11 +504,38 @@
             this.lSprat.TabIndex = 47;
             this.lSprat.Text = "Sprat";
             // 
+            // cbSprat
+            // 
+            this.cbSprat.FormattingEnabled = true;
+            this.cbSprat.Location = new System.Drawing.Point(489, 19);
+            this.cbSprat.Name = "cbSprat";
+            this.cbSprat.Size = new System.Drawing.Size(121, 21);
+            this.cbSprat.TabIndex = 48;
+            // 
+            // cbBrSoba
+            // 
+            this.cbBrSoba.FormattingEnabled = true;
+            this.cbBrSoba.Location = new System.Drawing.Point(489, 49);
+            this.cbBrSoba.Name = "cbBrSoba";
+            this.cbBrSoba.Size = new System.Drawing.Size(121, 21);
+            this.cbBrSoba.TabIndex = 49;
+            // 
+            // cbGrejanje
+            // 
+            this.cbGrejanje.FormattingEnabled = true;
+            this.cbGrejanje.Location = new System.Drawing.Point(489, 76);
+            this.cbGrejanje.Name = "cbGrejanje";
+            this.cbGrejanje.Size = new System.Drawing.Size(121, 21);
+            this.cbGrejanje.TabIndex = 50;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 433);
+            this.Controls.Add(this.cbGrejanje);
+            this.Controls.Add(this.cbBrSoba);
+            this.Controls.Add(this.cbSprat);
             this.Controls.Add(this.lSprat);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
@@ -611,5 +641,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lSprat;
+        private System.Windows.Forms.ComboBox cbSprat;
+        private System.Windows.Forms.ComboBox cbBrSoba;
+        private System.Windows.Forms.ComboBox cbGrejanje;
     }
 }

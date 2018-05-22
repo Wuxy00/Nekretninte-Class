@@ -25,5 +25,6 @@ namespace Nekretninte_Class
     {
         public static IWebDriver driver = new ChromeDriver();
         public static IWebDriver driver1 = new ChromeDriver();
+        public static IWebDriver driver2 = new ChromeDriver();
     }
 }

@@ -2,7 +2,7 @@
  * Copyright 2018
  *****************************************************************************
  *
- * Filename    : Login.cs
+ * Filename    : SrbijaNekretnineByPass.cs
  *
  * Created By  : Vukašin Stamenković
  *
@@ -15,12 +15,7 @@
  *
  *****************************************************************************/
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 
 namespace Nekretninte_Class
 {

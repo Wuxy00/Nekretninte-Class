@@ -66,6 +66,8 @@
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs" />
+    <Compile Include="NadjiDom.cs" />
+    <Compile Include="NadjiDomLogin.cs" />
     <Compile Include="PlaceCategory.cs" />
     <Compile Include="AllTextInputForms.cs" />
     <Compile Include="Program.cs" />
