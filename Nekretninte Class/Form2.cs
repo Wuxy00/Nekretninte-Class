@@ -4,7 +4,7 @@
  *
  * Filename    : Form2.cs
  *
- * Created By  : Vukašin Stamenković
+ * Created By  : Vukašin Stamenković && Dimitrije Iskrenović
  *
  * Based On    : 
  *

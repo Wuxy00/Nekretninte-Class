@@ -73,6 +73,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicVar.cs" />
+    <Compile Include="Relatica.cs" />
+    <Compile Include="RelaticaLogin.cs" />
     <Compile Include="SelectFromStructureGroup1.cs" />
     <Compile Include="SrbijaNekretnineByPass.cs" />
     <Compile Include="SrbijaNekretnineOglas.cs" />

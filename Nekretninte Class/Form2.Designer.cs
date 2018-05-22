@@ -89,6 +89,8 @@
             this.cbUknjizeno = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
             this.cbStanje = new System.Windows.Forms.ComboBox();
+            this.cbOpstina = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbKat
@@ -645,11 +647,36 @@
             this.cbStanje.Size = new System.Drawing.Size(121, 21);
             this.cbStanje.TabIndex = 59;
             // 
+            // cbOpstina
+            // 
+            this.cbOpstina.FormattingEnabled = true;
+            this.cbOpstina.Items.AddRange(new object[] {
+            "Pantelej",
+            "Medijana",
+            "Niška Banja",
+            "Palilula",
+            "Crveni krst"});
+            this.cbOpstina.Location = new System.Drawing.Point(12, 327);
+            this.cbOpstina.Name = "cbOpstina";
+            this.cbOpstina.Size = new System.Drawing.Size(121, 21);
+            this.cbOpstina.TabIndex = 61;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(12, 311);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(43, 13);
+            this.label28.TabIndex = 62;
+            this.label28.Text = "Opstina";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 492);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.cbOpstina);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.cbStanje);
             this.Controls.Add(this.label26);
@@ -781,5 +808,7 @@
         private System.Windows.Forms.ComboBox cbUknjizeno;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.ComboBox cbStanje;
+        private System.Windows.Forms.ComboBox cbOpstina;
+        private System.Windows.Forms.Label label28;
     }
 }
