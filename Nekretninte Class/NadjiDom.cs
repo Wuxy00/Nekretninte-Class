@@ -42,7 +42,7 @@ namespace Nekretninte_Class
             if (tbDvoriste != "") { driver.FindElement(By.Id("land_surface")).SendKeys(tbDvoriste); } // DVORISTE
 
             SelectElement oSelectBrSoba = new SelectElement(driver.FindElement(By.Id("nb_rooms")));
-            oSelectDrzava.SelectByValue(cbBrSoba);//Broj Soba
+            oSelectDrzava.SelectByText(cbBrSoba);//Broj Soba
             
             SelectElement oSelectBrKupatila = new SelectElement(driver.FindElement(By.Id("nb_baths")));
             oSelectDrzava.SelectByValue(bathroom);//Broj Kupatila

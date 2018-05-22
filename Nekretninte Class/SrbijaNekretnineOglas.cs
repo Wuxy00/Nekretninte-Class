@@ -33,7 +33,7 @@ namespace Nekretninte_Class
             driver.FindElement(By.XPath("//*[@id='tipovi-pretplate']/label[1]/input")).Click();
             driver.FindElement(By.Id("deoMestaTxt")).SendKeys(DeoGrada);
             driver.FindElement(By.Id("adresaTxt")).SendKeys(adress+" "+ adressNumber);
-            driver.FindElement(By.Id("spratTxt")).SendKeys(Combobox2Sprat);
+            driver.FindElement(By.Id("spratTxt")).SendKeys(Combobox2Sprat);///BUG FIX TODO spratnos kad je kuća
             driver.FindElement(By.Id("kupatilaTxt")).SendKeys(bathroom);
             driver.FindElement(By.Id("teraseTxt")).SendKeys(terrace);
             driver.FindElement(By.Id("godisteTxt")).SendKeys(year);

@@ -14,6 +14,9 @@
  *               
  *
  *****************************************************************************/
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -38,8 +41,10 @@ namespace Nekretninte_Class
             else { };
             SelectElement oSelectZemlja = new SelectElement(driver.FindElement(By.Id("country")));
             oSelectZemlja.SelectByValue("Serbia");
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(1));
             SelectElement oSelectGrad = new SelectElement(driver.FindElement(By.Id("region")));
-            oSelectZemlja.SelectByValue("409");
+            oSelectZemlja.SelectByText("Niš"); /// BUg FIXXXXX TODO!!!!!!
+            var wait1 = new WebDriverWait(driver, TimeSpan.FromSeconds(1));
             SelectElement oSelectOpstina = new SelectElement(driver.FindElement(By.Id("municipality"))); // OPŠTINA
             if (cbOpstina == "Crveni krst")
                 oSelectTip.SelectByValue("040911");
@@ -52,6 +57,7 @@ namespace Nekretninte_Class
             else if (cbKat == "Pantelej")
                 oSelectTip.SelectByValue("040910");
             else { };
+            var wait2 = new WebDriverWait(driver, TimeSpan.FromSeconds(1));
             driver.FindElement(By.XPath("//*[@id='content_holder']/table/tbody/tr[6]/td/form/table/tbody/tr[6]/td[2]/input")).SendKeys(tbArea);
             driver.FindElement(By.XPath("//*[@id='content_holder']/table/tbody/tr[6]/td/form/table/tbody/tr[8]/td/p/input")).Submit();
             //Second Page

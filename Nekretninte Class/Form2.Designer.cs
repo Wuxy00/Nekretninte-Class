@@ -529,15 +529,16 @@
             this.cbBrSoba.FormattingEnabled = true;
             this.cbBrSoba.Items.AddRange(new object[] {
             "Garsonjera",
-            "1,0",
-            "1,5",
-            "2,0",
-            "2,5",
-            "3,0",
-            "3,5",
-            "4,0",
-            "4,5",
-            "5,0"});
+            "1",
+            "1.5",
+            "2",
+            "2.5",
+            "3",
+            "3.5",
+            "4",
+            "4.5",
+            "5",
+            "6"});
             this.cbBrSoba.Location = new System.Drawing.Point(12, 128);
             this.cbBrSoba.Name = "cbBrSoba";
             this.cbBrSoba.Size = new System.Drawing.Size(121, 21);
