@@ -20,7 +20,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Nekretninte_Class
 {
-    class NadjiDom
+    class FNadjiDom
     {
         public void Procede(IWebDriver driver, string DeoGrada, string adress, string adressNumber, string m2, string Combobox1Prvi, string tbPrice, string desc, string bathroom, string terrace, string year, string Combobox2Sprat, string tbDvoriste, string cbBrSoba, string grejanje)
         {

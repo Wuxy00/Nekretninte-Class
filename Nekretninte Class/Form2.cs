@@ -40,11 +40,11 @@ namespace Nekretninte_Class
             CetriZida cetriZida = new CetriZida();
             cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
             //cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex);
-            SrbijaNekretnineOglas EnterAllSrbiaNek = new SrbijaNekretnineOglas();
+            FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
             EnterAllSrbiaNek.Procede(PublicVar.driver1, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, comboBox1.Text);
-            NadjiDom EnterAllNadjiDom = new NadjiDom();
+            FNadjiDom EnterAllNadjiDom = new FNadjiDom();
             //EnterAllNadjiDom.Procede(PublicVar.driver2, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbGrupa.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, tbDvoriste.Text, cbBrSoba.Text, cbGrejanje.Text);
-            Relatica EnterRelatica = new Relatica();
+            FRelatica EnterRelatica = new FRelatica();
             EnterRelatica.Procede(PublicVar.driver3, cbKat.Text, cbOpstina.Text, tbArea.Text, tbCena.Text, tbGodiste.Text, cbBrSoba.Text, tbBrKup.Text, tbKvad.Text, tbDvoriste.Text, rtbOpis.Text);
         }
 
