@@ -47,7 +47,7 @@ namespace Nekretninte_Class
             Select(driver, indexGroup, "architecture", "state");
             Select(driver, indexPurpous, "generalPurpose", "generalPurpose");
             Select(driver, indexStructure, "structure", "structure");
-            Select(driver, indexState, "architecture", "state", 3);
+            Select(driver, indexState, "architecture", "state", "//*[@id='details']/div[14]/div/div[2]/div");
         }
         private void Select(IWebDriver driver, int index, string aria, string buttonName)
         {
@@ -55,11 +55,11 @@ namespace Nekretninte_Class
             IWebElement meni = driver.FindElement(By.XPath("//ul[@aria-labelledby='" + aria + "']"));
             meni.FindElements(By.TagName("a"))[index + 1].Click();
         }
-        private void Select(IWebDriver driver, int index, string aria, string buttonName, int divIndex) //Zbog slepca samoukog koji nikad kompjuter nije uvatio u ruke
+        private void Select(IWebDriver driver, int index, string aria, string buttonName, string xPath) //Zbog slepca samoukog koji nikad kompjuter nije uvatio u ruke
         {
-            IWebElement div = driver.FindElements(By.ClassName("form-group"))[divIndex];
+            IWebElement div = driver.FindElement(By.XPath(xPath));
             div.FindElement(By.Id(buttonName)).Click();
-            IWebElement meni = driver.FindElement(By.XPath("//ul[@aria-labelledby='" + aria + "']"));
+            IWebElement meni = div.FindElement(By .TagName("ul"));
             meni.FindElements(By.TagName("a"))[index].Click();
         }
     }
