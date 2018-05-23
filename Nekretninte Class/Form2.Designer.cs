@@ -646,6 +646,12 @@
             // cbStanje
             // 
             this.cbStanje.FormattingEnabled = true;
+            this.cbStanje.Items.AddRange(new object[] {
+            "Uobičajeno",
+            "Novo",
+            "U izgradnji",
+            "Renovirano",
+            "Potrebno renoviranje"});
             this.cbStanje.Location = new System.Drawing.Point(12, 287);
             this.cbStanje.Name = "cbStanje";
             this.cbStanje.Size = new System.Drawing.Size(121, 21);

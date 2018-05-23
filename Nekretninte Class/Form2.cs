@@ -28,7 +28,7 @@ namespace Nekretninte_Class
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //TODOOOOOO bug 4zida.rs login drugaciji od drugih // NeMenjaNISSTA!!!!!!!!!!!!!! u ovom BUTTON-u!!!!!!! // ZASTO DA NE MENJEMA PEDERUUUU
+            //TODOOOOOO bug 4zida.rs login drugaciji od drugih // NeMenjaNISSTA!!!!!!!!!!!!!! u ovom BUTTON-u!!!!!!! // ZASTO DA NE MENJEMA PEDERUUUU //Zato sto nista ne valja i treba se promeni ali nemo ti jer sam taj button ja pravio
             SelectFromStructureGroup1 startSelection = new SelectFromStructureGroup1(); // Select type of selling place
             startSelection.Setup(PublicVar.driver);
             PlaceCategory FirstQA = new PlaceCategory();
@@ -41,7 +41,7 @@ namespace Nekretninte_Class
             cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
             cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex,cbStanje.SelectedIndex ,cbSprat.SelectedIndex);            
             FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
-            EnterAllSrbiaNek.Procede(PublicVar.driver1, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, comboBox1.Text);
+            EnterAllSrbiaNek.Procede(PublicVar.driver1, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text);
             FNadjiDom EnterAllNadjiDom = new FNadjiDom();
             //EnterAllNadjiDom.Procede(PublicVar.driver2, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbGrupa.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, tbDvoriste.Text, cbBrSoba.Text, cbGrejanje.Text);
             FRelatica EnterRelatica = new FRelatica();
