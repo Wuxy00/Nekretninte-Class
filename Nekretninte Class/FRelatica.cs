@@ -22,7 +22,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Nekretninte_Class
 {
-    class Relatica
+    class FRelatica
     {
         public void Procede(IWebDriver driver,string cbKat, string cbOpstina, string tbArea, string tbPrice, string year, string cbBrojSoba,string bathroom,string m2,string tbDvoriste,string desc)
         {

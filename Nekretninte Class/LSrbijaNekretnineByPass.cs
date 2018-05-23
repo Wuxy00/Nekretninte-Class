@@ -19,7 +19,7 @@ using OpenQA.Selenium;
 
 namespace Nekretninte_Class
 {
-    class SrbijaNekretnineByPass
+    class LSrbijaNekretnineByPass
     {
         string url = "https://srbija-nekretnine.org/agencija/registracija?oglas=1";
         public void Setup(IWebDriver driver)

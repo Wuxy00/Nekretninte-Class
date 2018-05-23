@@ -18,7 +18,7 @@ using OpenQA.Selenium;
 
 namespace Nekretninte_Class
 {
-    class NadjiDomLogin
+    class LNadjiDomLogin
     {
         string url = "http://www.nadjidom.com/sr/login";
         public void Setup(IWebDriver driver)

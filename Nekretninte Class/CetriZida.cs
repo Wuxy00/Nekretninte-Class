@@ -60,7 +60,7 @@ namespace Nekretninte_Class
             IWebElement div = driver.FindElement(By.XPath(xPath));
             div.FindElement(By.Id(buttonName)).Click();
             IWebElement meni = div.FindElement(By .TagName("ul"));
-            meni.FindElements(By.TagName("a"))[index].Click();
+            meni.FindElements(By.TagName("a"))[index + 1].Click();
         }
     }
 }
