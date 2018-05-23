@@ -482,6 +482,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "Nisko Prizemlje",
+            "Prizemlje",
+            "Visoko Prizemlje",
             "1",
             "2",
             "3",
