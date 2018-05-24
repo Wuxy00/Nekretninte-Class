@@ -76,7 +76,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lSprat = new System.Windows.Forms.Label();
-            this.cbSprat = new System.Windows.Forms.ComboBox();
             this.cbBrSoba = new System.Windows.Forms.ComboBox();
             this.cbGrejanje = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -91,6 +90,7 @@
             this.cbStanje = new System.Windows.Forms.ComboBox();
             this.cbOpstina = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
+            this.cbSprat = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cbKat
@@ -519,14 +519,6 @@
             this.lSprat.TabIndex = 47;
             this.lSprat.Text = "Sprat";
             // 
-            // cbSprat
-            // 
-            this.cbSprat.FormattingEnabled = true;
-            this.cbSprat.Location = new System.Drawing.Point(12, 88);
-            this.cbSprat.Name = "cbSprat";
-            this.cbSprat.Size = new System.Drawing.Size(121, 21);
-            this.cbSprat.TabIndex = 48;
-            // 
             // cbBrSoba
             // 
             this.cbBrSoba.FormattingEnabled = true;
@@ -680,11 +672,44 @@
             this.label28.TabIndex = 62;
             this.label28.Text = "Opstina";
             // 
+            // cbSprat
+            // 
+            this.cbSprat.FormattingEnabled = true;
+            this.cbSprat.Items.AddRange(new object[] {
+            "Nisko Prizemlje",
+            "Prizemlje",
+            "Visoko Prizemlje",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"});
+            this.cbSprat.Location = new System.Drawing.Point(12, 89);
+            this.cbSprat.Name = "cbSprat";
+            this.cbSprat.Size = new System.Drawing.Size(121, 21);
+            this.cbSprat.TabIndex = 63;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 492);
+            this.Controls.Add(this.cbSprat);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.cbOpstina);
             this.Controls.Add(this.label27);
@@ -699,7 +724,6 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.cbGrejanje);
             this.Controls.Add(this.cbBrSoba);
-            this.Controls.Add(this.cbSprat);
             this.Controls.Add(this.lSprat);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
@@ -805,7 +829,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lSprat;
-        private System.Windows.Forms.ComboBox cbSprat;
         private System.Windows.Forms.ComboBox cbBrSoba;
         private System.Windows.Forms.ComboBox cbGrejanje;
         private System.Windows.Forms.Label label21;
@@ -820,5 +843,6 @@
         private System.Windows.Forms.ComboBox cbStanje;
         private System.Windows.Forms.ComboBox cbOpstina;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.ComboBox cbSprat;
     }
 }
