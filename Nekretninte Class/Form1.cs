@@ -47,6 +47,9 @@ namespace Nekretninte_Class
             startFour.Setup(PublicVar.driver3);
             startFour.Procede(PublicVar.driver3, textBox1.Text, textBox2.Text);
             //startFour.End();
+            LMojTrg startFive = new LMojTrg();
+            startFive.Setup(PublicVar.driver4);
+            startFive.Procede(PublicVar.driver4, textBox1.Text, textBox2.Text);
             Form2 form2 = new Form2(); // Nextform
             form2.Show();
             this.Hide();

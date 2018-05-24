@@ -26,5 +26,6 @@ namespace Nekretninte_Class
         public static IWebDriver driver1 = new ChromeDriver(); // srbija-nekretnine
         public static IWebDriver driver2 = new ChromeDriver(); // nadji dom
         public static IWebDriver driver3 = new ChromeDriver(); // retalica
+        public static IWebDriver driver4 = new ChromeDriver(); // mojtrg
     }
 }
