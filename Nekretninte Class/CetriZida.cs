@@ -42,7 +42,7 @@ namespace Nekretninte_Class
             driver.FindElement(By.Id("trolleybusLine")).SendKeys(trolleybusLine);
             driver.FindElement(By.Id("desc")).SendKeys(desc);            
         }
-        public void ProceedMultipleChoice(IWebDriver driver, int indexGroup, int indexPurpous, int indexStructure, int indexUknjizeno, int indexState, int indexSprat)
+        public void ProceedMultipleChoice(IWebDriver driver, int indexGroup, int indexPurpous, int indexStructure, int indexUknjizeno, int indexState, int indexSprat, int indexGrejanje)
         {
             Select(driver, indexGroup, "architecture", "state");
             Select(driver, indexPurpous, "generalPurpose", "generalPurpose");
@@ -50,6 +50,7 @@ namespace Nekretninte_Class
             Select(driver, indexUknjizeno, "architecture", "state", "//*[@id='details']/div[14]/div/div[2]/div");
             Select(driver, indexState, "state", "state", "//*[@id='details']/div[20]/div[1]/div[2]/div");
             Select(driver, indexSprat, "floor", "floor");
+            Select(driver, indexGrejanje, "heatingType", "heatingType");
         }
         private void Select(IWebDriver driver, int index, string aria, string buttonName)
         {

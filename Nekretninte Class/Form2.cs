@@ -39,7 +39,7 @@ namespace Nekretninte_Class
         {  
             CetriZida cetriZida = new CetriZida();
             cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
-            cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex,cbStanje.SelectedIndex ,cbSprat.SelectedIndex);            
+            cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex,cbGrejanje.SelectedIndex);
             FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
             EnterAllSrbiaNek.Procede(PublicVar.driver1, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text);
             FNadjiDom EnterAllNadjiDom = new FNadjiDom();
