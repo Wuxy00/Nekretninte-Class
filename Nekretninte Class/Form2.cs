@@ -38,12 +38,12 @@ namespace Nekretninte_Class
         private void button2_Click(object sender, EventArgs e)
         {  
             CetriZida cetriZida = new CetriZida();
-            cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text);
+            cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text,*/ rtbOpis.Text);
             cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex,cbGrejanje.SelectedIndex);
             FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
-            EnterAllSrbiaNek.Procede(PublicVar.driver1, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text);
+            EnterAllSrbiaNek.Procede(PublicVar.driver1, tbNaslov.Text,tbArea.Text/*, tbAdresa.Text, tbBroj.Text*/, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text);
             FNadjiDom EnterAllNadjiDom = new FNadjiDom();
-            //EnterAllNadjiDom.Procede(PublicVar.driver2, tbArea.Text, tbAdresa.Text, tbBroj.Text, tbKvad.Text, cbGrupa.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, tbDvoriste.Text, cbBrSoba.Text, cbGrejanje.Text);
+            //EnterAllNadjiDom.Procede(PublicVar.driver2, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbGrupa.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, tbDvoriste.Text, cbBrSoba.Text, cbGrejanje.Text,tbBrLift.Text,cbUknjizeno.Text, tbPrikTel.Text,chPodrum.Checked,tbParking.Text,tbGaraza.Text,tbBrInterfon.Text);
             FRelatica EnterRelatica = new FRelatica();
             EnterRelatica.Procede(PublicVar.driver3, cbKat.Text, cbOpstina.Text, tbArea.Text, tbCena.Text, tbGodiste.Text, cbBrSoba.Text, tbBrKup.Text, tbKvad.Text, tbDvoriste.Text, rtbOpis.Text);
         }
@@ -53,23 +53,11 @@ namespace Nekretninte_Class
             VratiNaDefault();
             if (cbKat.Text == "Kuca")
             {
-                tbAutobus.Hide();
-                tbTramvaj.Hide();
-                tbTrolejbus.Hide();
-                label16.Hide();
-                label17.Hide();
-                label18.Hide();
 
             }
             else if(cbKat.Text == "Poslovni prostor")
             {
-                tbAutobus.Hide();
-                tbTramvaj.Hide();
                 tbDvoriste.Hide();
-                tbTrolejbus.Hide();
-                label16.Hide();
-                label18.Hide();
-                label17.Hide();
                 label20.Hide();
             }
             else if(cbKat.Text == "Plac")
@@ -77,8 +65,6 @@ namespace Nekretninte_Class
                 tbCena.Show();
                 tbKvad.Show();
                 tbArea.Show();
-                tbAdresa.Show();
-                tbBroj.Show();
                 tbGodiste.Show();
                 tbBrojLodja.Show();
                 tbBrojTerasa.Show();
@@ -93,10 +79,7 @@ namespace Nekretninte_Class
                 tbToal.Hide();
                 tbParking.Hide();
                 tbGaraza.Hide();
-                tbAutobus.Hide();
-                tbTramvaj.Hide();
                 tbDvoriste.Hide();
-                tbTrolejbus.Hide();
                 label6.Hide();
                 label7.Hide();
                 label8.Hide();
@@ -107,9 +90,6 @@ namespace Nekretninte_Class
                 label13.Hide();
                 label14.Hide();
                 label15.Hide();
-                label16.Hide();
-                label17.Hide();
-                label18.Hide();
                 label20.Hide();
             }
             else if(cbKat.Text == "Garaza")
@@ -124,9 +104,6 @@ namespace Nekretninte_Class
                 label13.Hide();
                 label14.Hide();
                 label15.Hide();
-                label16.Hide();
-                label17.Hide();
-                label18.Hide();
                 label20.Hide();
                 tbGodiste.Hide();
                 tbBrojLodja.Hide();
@@ -138,9 +115,6 @@ namespace Nekretninte_Class
                 tbToal.Hide();
                 tbParking.Hide();
                 tbGaraza.Hide();
-                tbAutobus.Hide();
-                tbTramvaj.Hide();
-                tbTrolejbus.Hide();
                 tbDvoriste.Hide();
             }
             else
@@ -154,8 +128,6 @@ namespace Nekretninte_Class
             tbCena.Show();
             tbKvad.Show();
             tbArea.Show();
-            tbAdresa.Show();
-            tbBroj.Show();
             tbGodiste.Show();
             tbBrojLodja.Show();
             tbBrojTerasa.Show();
@@ -170,10 +142,7 @@ namespace Nekretninte_Class
             tbToal.Show();
             tbParking.Show();
             tbGaraza.Show();
-            tbAutobus.Show();
-            tbTramvaj.Show();
             tbDvoriste.Show();
-            tbTrolejbus.Show();
             label6.Show();
             label7.Show();
             label8.Show();
@@ -184,9 +153,6 @@ namespace Nekretninte_Class
             label13.Show();
             label14.Show();
             label15.Show();
-            label16.Show();
-            label17.Show();
-            label18.Show();
             label20.Show();
         }
 

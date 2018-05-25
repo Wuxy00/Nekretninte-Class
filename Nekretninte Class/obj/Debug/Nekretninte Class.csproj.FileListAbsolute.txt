@@ -76,3 +76,4 @@ C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\N
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CoreCompileInputs.cache
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.exe
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.pdb
+C:\Users\wukas\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csprojAssemblyReference.cache
