@@ -50,6 +50,10 @@ namespace Nekretninte_Class
             LMojTrg startFive = new LMojTrg();
             startFive.Setup(PublicVar.driver4);
             startFive.Procede(PublicVar.driver4, textBox1.Text, textBox2.Text);
+            //startFive.End();
+            LIndomio startSix = new LIndomio();
+            startSix.Setup(PublicVar.driver5);
+            startSix.Procede(PublicVar.driver5, textBox1.Text, textBox2.Text);
             Form2 form2 = new Form2(); // Nextform
             form2.Show();
             this.Hide();

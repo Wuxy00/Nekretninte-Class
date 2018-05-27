@@ -80,20 +80,20 @@
             this.label28 = new System.Windows.Forms.Label();
             this.cbSprat = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chUseljivo = new System.Windows.Forms.CheckBox();
-            this.chDupleks = new System.Windows.Forms.CheckBox();
-            this.chPodrum = new System.Windows.Forms.CheckBox();
-            this.chKuhinja = new System.Windows.Forms.CheckBox();
             this.chOstava = new System.Windows.Forms.CheckBox();
+            this.chKuhinja = new System.Windows.Forms.CheckBox();
+            this.chPodrum = new System.Windows.Forms.CheckBox();
+            this.chDupleks = new System.Windows.Forms.CheckBox();
+            this.chUseljivo = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chI = new System.Windows.Forms.CheckBox();
-            this.chZ = new System.Windows.Forms.CheckBox();
-            this.chS = new System.Windows.Forms.CheckBox();
-            this.chJ = new System.Windows.Forms.CheckBox();
-            this.chSZ = new System.Windows.Forms.CheckBox();
-            this.chSI = new System.Windows.Forms.CheckBox();
-            this.chJI = new System.Windows.Forms.CheckBox();
             this.chJZ = new System.Windows.Forms.CheckBox();
+            this.chJI = new System.Windows.Forms.CheckBox();
+            this.chSI = new System.Windows.Forms.CheckBox();
+            this.chSZ = new System.Windows.Forms.CheckBox();
+            this.chJ = new System.Windows.Forms.CheckBox();
+            this.chS = new System.Windows.Forms.CheckBox();
+            this.chZ = new System.Windows.Forms.CheckBox();
+            this.chI = new System.Windows.Forms.CheckBox();
             this.tbNaslov = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -167,7 +167,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(156, 234);
+            this.label1.Location = new System.Drawing.Point(186, 234);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 6;
@@ -238,7 +238,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(269, 274);
+            this.label7.Location = new System.Drawing.Point(286, 274);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 19;
@@ -247,7 +247,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(365, 274);
+            this.label8.Location = new System.Drawing.Point(387, 274);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 20;
@@ -280,14 +280,14 @@
             // 
             // tbBrLift
             // 
-            this.tbBrLift.Location = new System.Drawing.Point(477, 287);
+            this.tbBrLift.Location = new System.Drawing.Point(475, 290);
             this.tbBrLift.Name = "tbBrLift";
             this.tbBrLift.Size = new System.Drawing.Size(100, 20);
             this.tbBrLift.TabIndex = 24;
             // 
             // tbBrKup
             // 
-            this.tbBrKup.Location = new System.Drawing.Point(581, 287);
+            this.tbBrKup.Location = new System.Drawing.Point(581, 290);
             this.tbBrKup.Name = "tbBrKup";
             this.tbBrKup.Size = new System.Drawing.Size(100, 20);
             this.tbBrKup.TabIndex = 25;
@@ -301,14 +301,14 @@
             // 
             // tbParking
             // 
-            this.tbParking.Location = new System.Drawing.Point(264, 332);
+            this.tbParking.Location = new System.Drawing.Point(262, 333);
             this.tbParking.Name = "tbParking";
             this.tbParking.Size = new System.Drawing.Size(100, 20);
             this.tbParking.TabIndex = 27;
             // 
             // tbGaraza
             // 
-            this.tbGaraza.Location = new System.Drawing.Point(368, 332);
+            this.tbGaraza.Location = new System.Drawing.Point(368, 333);
             this.tbGaraza.Name = "tbGaraza";
             this.tbGaraza.Size = new System.Drawing.Size(100, 20);
             this.tbGaraza.TabIndex = 28;
@@ -316,7 +316,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(494, 272);
+            this.label11.Location = new System.Drawing.Point(494, 274);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 13);
             this.label11.TabIndex = 29;
@@ -325,7 +325,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(599, 272);
+            this.label12.Location = new System.Drawing.Point(596, 274);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(64, 13);
             this.label12.TabIndex = 30;
@@ -334,7 +334,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(281, 317);
+            this.label13.Location = new System.Drawing.Point(276, 316);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(74, 13);
             this.label13.TabIndex = 31;
@@ -343,7 +343,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(166, 317);
+            this.label14.Location = new System.Drawing.Point(175, 317);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(59, 13);
             this.label14.TabIndex = 32;
@@ -352,7 +352,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(378, 317);
+            this.label15.Location = new System.Drawing.Point(397, 316);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 13);
             this.label15.TabIndex = 33;
@@ -370,7 +370,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(485, 316);
+            this.label20.Location = new System.Drawing.Point(503, 317);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(46, 13);
             this.label20.TabIndex = 42;
@@ -378,7 +378,7 @@
             // 
             // tbDvoriste
             // 
-            this.tbDvoriste.Location = new System.Drawing.Point(477, 332);
+            this.tbDvoriste.Location = new System.Drawing.Point(475, 333);
             this.tbDvoriste.Name = "tbDvoriste";
             this.tbDvoriste.Size = new System.Drawing.Size(100, 20);
             this.tbDvoriste.TabIndex = 43;
@@ -613,35 +613,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dodatne Informacije";
             // 
-            // chUseljivo
+            // chOstava
             // 
-            this.chUseljivo.AutoSize = true;
-            this.chUseljivo.Location = new System.Drawing.Point(7, 20);
-            this.chUseljivo.Name = "chUseljivo";
-            this.chUseljivo.Size = new System.Drawing.Size(63, 17);
-            this.chUseljivo.TabIndex = 0;
-            this.chUseljivo.Text = "Useljivo";
-            this.chUseljivo.UseVisualStyleBackColor = true;
-            // 
-            // chDupleks
-            // 
-            this.chDupleks.AutoSize = true;
-            this.chDupleks.Location = new System.Drawing.Point(7, 43);
-            this.chDupleks.Name = "chDupleks";
-            this.chDupleks.Size = new System.Drawing.Size(65, 17);
-            this.chDupleks.TabIndex = 1;
-            this.chDupleks.Text = "Dupleks";
-            this.chDupleks.UseVisualStyleBackColor = true;
-            // 
-            // chPodrum
-            // 
-            this.chPodrum.AutoSize = true;
-            this.chPodrum.Location = new System.Drawing.Point(6, 66);
-            this.chPodrum.Name = "chPodrum";
-            this.chPodrum.Size = new System.Drawing.Size(62, 17);
-            this.chPodrum.TabIndex = 2;
-            this.chPodrum.Text = "Podrum";
-            this.chPodrum.UseVisualStyleBackColor = true;
+            this.chOstava.AutoSize = true;
+            this.chOstava.Location = new System.Drawing.Point(6, 107);
+            this.chOstava.Name = "chOstava";
+            this.chOstava.Size = new System.Drawing.Size(60, 17);
+            this.chOstava.TabIndex = 4;
+            this.chOstava.Text = "Ostava";
+            this.chOstava.UseVisualStyleBackColor = true;
             // 
             // chKuhinja
             // 
@@ -653,15 +633,35 @@
             this.chKuhinja.Text = "Kuhinja";
             this.chKuhinja.UseVisualStyleBackColor = true;
             // 
-            // chOstava
+            // chPodrum
             // 
-            this.chOstava.AutoSize = true;
-            this.chOstava.Location = new System.Drawing.Point(6, 107);
-            this.chOstava.Name = "chOstava";
-            this.chOstava.Size = new System.Drawing.Size(60, 17);
-            this.chOstava.TabIndex = 4;
-            this.chOstava.Text = "Ostava";
-            this.chOstava.UseVisualStyleBackColor = true;
+            this.chPodrum.AutoSize = true;
+            this.chPodrum.Location = new System.Drawing.Point(6, 66);
+            this.chPodrum.Name = "chPodrum";
+            this.chPodrum.Size = new System.Drawing.Size(62, 17);
+            this.chPodrum.TabIndex = 2;
+            this.chPodrum.Text = "Podrum";
+            this.chPodrum.UseVisualStyleBackColor = true;
+            // 
+            // chDupleks
+            // 
+            this.chDupleks.AutoSize = true;
+            this.chDupleks.Location = new System.Drawing.Point(7, 43);
+            this.chDupleks.Name = "chDupleks";
+            this.chDupleks.Size = new System.Drawing.Size(65, 17);
+            this.chDupleks.TabIndex = 1;
+            this.chDupleks.Text = "Dupleks";
+            this.chDupleks.UseVisualStyleBackColor = true;
+            // 
+            // chUseljivo
+            // 
+            this.chUseljivo.AutoSize = true;
+            this.chUseljivo.Location = new System.Drawing.Point(7, 20);
+            this.chUseljivo.Name = "chUseljivo";
+            this.chUseljivo.Size = new System.Drawing.Size(63, 17);
+            this.chUseljivo.TabIndex = 0;
+            this.chUseljivo.Text = "Useljivo";
+            this.chUseljivo.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -680,65 +680,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Orijentacija";
             // 
-            // chI
+            // chJZ
             // 
-            this.chI.AutoSize = true;
-            this.chI.Location = new System.Drawing.Point(12, 19);
-            this.chI.Name = "chI";
-            this.chI.Size = new System.Drawing.Size(49, 17);
-            this.chI.TabIndex = 5;
-            this.chI.Text = "Istok";
-            this.chI.UseVisualStyleBackColor = true;
-            // 
-            // chZ
-            // 
-            this.chZ.AutoSize = true;
-            this.chZ.Location = new System.Drawing.Point(12, 42);
-            this.chZ.Name = "chZ";
-            this.chZ.Size = new System.Drawing.Size(57, 17);
-            this.chZ.TabIndex = 6;
-            this.chZ.Text = "Zapad";
-            this.chZ.UseVisualStyleBackColor = true;
-            // 
-            // chS
-            // 
-            this.chS.AutoSize = true;
-            this.chS.Location = new System.Drawing.Point(12, 66);
-            this.chS.Name = "chS";
-            this.chS.Size = new System.Drawing.Size(54, 17);
-            this.chS.TabIndex = 7;
-            this.chS.Text = "Sever";
-            this.chS.UseVisualStyleBackColor = true;
-            // 
-            // chJ
-            // 
-            this.chJ.AutoSize = true;
-            this.chJ.Location = new System.Drawing.Point(12, 89);
-            this.chJ.Name = "chJ";
-            this.chJ.Size = new System.Drawing.Size(43, 17);
-            this.chJ.TabIndex = 8;
-            this.chJ.Text = "Jug";
-            this.chJ.UseVisualStyleBackColor = true;
-            // 
-            // chSZ
-            // 
-            this.chSZ.AutoSize = true;
-            this.chSZ.Location = new System.Drawing.Point(83, 20);
-            this.chSZ.Name = "chSZ";
-            this.chSZ.Size = new System.Drawing.Size(89, 17);
-            this.chSZ.TabIndex = 9;
-            this.chSZ.Text = "Severozapad";
-            this.chSZ.UseVisualStyleBackColor = true;
-            // 
-            // chSI
-            // 
-            this.chSI.AutoSize = true;
-            this.chSI.Location = new System.Drawing.Point(83, 39);
-            this.chSI.Name = "chSI";
-            this.chSI.Size = new System.Drawing.Size(82, 17);
-            this.chSI.TabIndex = 10;
-            this.chSI.Text = "Severoistok";
-            this.chSI.UseVisualStyleBackColor = true;
+            this.chJZ.AutoSize = true;
+            this.chJZ.Location = new System.Drawing.Point(83, 85);
+            this.chJZ.Name = "chJZ";
+            this.chJZ.Size = new System.Drawing.Size(80, 17);
+            this.chJZ.TabIndex = 12;
+            this.chJZ.Text = "JugoZapad";
+            this.chJZ.UseVisualStyleBackColor = true;
             // 
             // chJI
             // 
@@ -750,15 +700,65 @@
             this.chJI.Text = "Jugoistok";
             this.chJI.UseVisualStyleBackColor = true;
             // 
-            // chJZ
+            // chSI
             // 
-            this.chJZ.AutoSize = true;
-            this.chJZ.Location = new System.Drawing.Point(83, 85);
-            this.chJZ.Name = "chJZ";
-            this.chJZ.Size = new System.Drawing.Size(80, 17);
-            this.chJZ.TabIndex = 12;
-            this.chJZ.Text = "JugoZapad";
-            this.chJZ.UseVisualStyleBackColor = true;
+            this.chSI.AutoSize = true;
+            this.chSI.Location = new System.Drawing.Point(83, 39);
+            this.chSI.Name = "chSI";
+            this.chSI.Size = new System.Drawing.Size(82, 17);
+            this.chSI.TabIndex = 10;
+            this.chSI.Text = "Severoistok";
+            this.chSI.UseVisualStyleBackColor = true;
+            // 
+            // chSZ
+            // 
+            this.chSZ.AutoSize = true;
+            this.chSZ.Location = new System.Drawing.Point(83, 20);
+            this.chSZ.Name = "chSZ";
+            this.chSZ.Size = new System.Drawing.Size(89, 17);
+            this.chSZ.TabIndex = 9;
+            this.chSZ.Text = "Severozapad";
+            this.chSZ.UseVisualStyleBackColor = true;
+            // 
+            // chJ
+            // 
+            this.chJ.AutoSize = true;
+            this.chJ.Location = new System.Drawing.Point(12, 89);
+            this.chJ.Name = "chJ";
+            this.chJ.Size = new System.Drawing.Size(43, 17);
+            this.chJ.TabIndex = 8;
+            this.chJ.Text = "Jug";
+            this.chJ.UseVisualStyleBackColor = true;
+            // 
+            // chS
+            // 
+            this.chS.AutoSize = true;
+            this.chS.Location = new System.Drawing.Point(12, 66);
+            this.chS.Name = "chS";
+            this.chS.Size = new System.Drawing.Size(54, 17);
+            this.chS.TabIndex = 7;
+            this.chS.Text = "Sever";
+            this.chS.UseVisualStyleBackColor = true;
+            // 
+            // chZ
+            // 
+            this.chZ.AutoSize = true;
+            this.chZ.Location = new System.Drawing.Point(12, 42);
+            this.chZ.Name = "chZ";
+            this.chZ.Size = new System.Drawing.Size(57, 17);
+            this.chZ.TabIndex = 6;
+            this.chZ.Text = "Zapad";
+            this.chZ.UseVisualStyleBackColor = true;
+            // 
+            // chI
+            // 
+            this.chI.AutoSize = true;
+            this.chI.Location = new System.Drawing.Point(12, 19);
+            this.chI.Name = "chI";
+            this.chI.Size = new System.Drawing.Size(49, 17);
+            this.chI.TabIndex = 5;
+            this.chI.Text = "Istok";
+            this.chI.UseVisualStyleBackColor = true;
             // 
             // tbNaslov
             // 

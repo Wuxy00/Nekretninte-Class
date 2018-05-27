@@ -27,5 +27,6 @@ namespace Nekretninte_Class
         public static IWebDriver driver2 = new ChromeDriver(); // nadji dom
         public static IWebDriver driver3 = new ChromeDriver(); // retalica
         public static IWebDriver driver4 = new ChromeDriver(); // mojtrg
+        public static IWebDriver driver5 = new ChromeDriver(); // indomio
     }
 }
