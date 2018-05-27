@@ -21,9 +21,9 @@ namespace Nekretninte_Class
 {
     class FSrbijaNekretnineOglas
     {
-        public void Procede(IWebDriver driver, string DeoGrada, string adress,string adressNumber, string m2,string Combobox1Prvi,string tbPrice,string desc,string bathroom,string terrace,string year,string Combobox2Sprat)
+        public void Procede(IWebDriver driver,string Naslov, string DeoGrada, string m2,string Combobox1Prvi,string tbPrice,string desc,string bathroom,string terrace,string year,string Combobox2Sprat)
         {
-            driver.FindElement(By.Id("naslovTxt")).SendKeys("Stan " + DeoGrada + " " + adress + " " + m2);
+            driver.FindElement(By.Id("naslovTxt")).SendKeys(Naslov);
             SelectElement oSelectTip = new SelectElement(driver.FindElement(By.Id("tipOpt")));
             oSelectTip.SelectByValue(Combobox1Prvi);
             SelectElement oSelectDrzava = new SelectElement(driver.FindElement(By.Id("gradOpt")));
@@ -32,7 +32,6 @@ namespace Nekretninte_Class
             driver.FindElement(By.Id("cenaTxt")).SendKeys(tbPrice);
             driver.FindElement(By.XPath("//*[@id='tipovi-pretplate']/label[1]/input")).Click();
             driver.FindElement(By.Id("deoMestaTxt")).SendKeys(DeoGrada);
-            driver.FindElement(By.Id("adresaTxt")).SendKeys(adress+" "+ adressNumber);
             driver.FindElement(By.Id("spratTxt")).SendKeys(Combobox2Sprat);///BUG FIX TODO spratnos kad je kuća
             driver.FindElement(By.Id("kupatilaTxt")).SendKeys(bathroom);
             driver.FindElement(By.Id("teraseTxt")).SendKeys(terrace);
