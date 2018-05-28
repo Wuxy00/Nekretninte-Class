@@ -65,7 +65,7 @@ namespace Nekretninte_Class
             if (int.Parse(tbParking) > 0) { driver.FindElement(By.XPath("//*[@id='details_row']/ul/li/div[2]/label")).Click(); } // parking
             if (int.Parse(tbGaraza) > 0) { driver.FindElement(By.XPath("//*[@id='details_row']/ul/li/div[3]/label")).Click(); } // garaza
             if (int.Parse(tbBrInterfon) > 0) { driver.FindElement(By.XPath("//*[@id='details_row']/ul/li/div[15]/label")).Click(); } // interfon
-  driver.FindElement(By.XPath("//*[@id='tab1_content']/div/input")).Submit(); // submit
+            driver.FindElement(By.XPath("//*[@id='tab1_content']/div/input")).Submit(); // submit
         }
     }
 }
