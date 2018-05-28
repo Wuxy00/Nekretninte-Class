@@ -40,8 +40,8 @@ namespace Nekretninte_Class
             //startSecond.Setup(PublicVar.driver1);
             //startSecond.Procede(PublicVar.driver1, textBox1.Text, textBox2.Text);
 
-            //////startSecond.End();
-            //////Start program by loging in Srbija - nadjidom.com
+            ////startSecond.End();
+            ////Start program by loging in Srbija - nadjidom.com
 
             //LNadjiDomLogin startThird = new LNadjiDomLogin();
             //startThird.Setup(PublicVar.driver2);
@@ -69,15 +69,15 @@ namespace Nekretninte_Class
             ////startSix.End();
             ////Start loging on Nekretnine365.com
 
-            LNekretnine365 startSeven = new LNekretnine365();
-            startSeven.Setup(PublicVar.driver6);
-            startSeven.Procede(PublicVar.driver6, textBox1.Text, textBox2.Text);
+            //LNekretnine365 startSeven = new LNekretnine365();
+            //startSeven.Setup(PublicVar.driver6);
+            //startSeven.Procede(PublicVar.driver6, textBox1.Text, textBox2.Text);
 
             //startSeven.End();
 
-            //LNekretnineRs startEight = new LNekretnineRs();
-            //startEight.Setup(PublicVar.driver7);
-            //startEight.Proceed(PublicVar.driver7, textBox2.Text);
+            LNekretnineRs startEight = new LNekretnineRs();
+            startEight.Setup(PublicVar.driver7);
+            startEight.Proceed(PublicVar.driver7, textBox2.Text);
 
             Form2 form2 = new Form2(); // Nextform
             form2.Show();

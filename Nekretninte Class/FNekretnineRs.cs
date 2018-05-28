@@ -14,7 +14,10 @@
  *               
  *
  *****************************************************************************/
+using System;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+
 
 namespace Nekretninte_Class
 {
@@ -23,7 +26,8 @@ namespace Nekretninte_Class
         public void Proceed(IWebDriver driver)
         {
             driver.Url = "https://www.nekretnine.rs/member/Insertion/";
-            PublicVar.WaitUntilElementExists(driver, By.XPath("//*[@id='instructionWrapper']/div[2]/a"), 15).Submit();            
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            PublicVar.WaitUntilElementExists(driver, By.XPath("//*[@id='instructionWrapper']/div[2]/a"), 20).Click();
         }
     }
 }

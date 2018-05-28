@@ -46,10 +46,10 @@ namespace Nekretninte_Class
             ////EnterAllNadjiDom.Procede(PublicVar.driver2, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbGrupa.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, tbDvoriste.Text, cbBrSoba.Text, cbGrejanje.Text,tbBrLift.Text,cbUknjizeno.Text, tbPrikTel.Text,chPodrum.Checked,tbParking.Text,tbGaraza.Text,tbBrInterfon.Text);
             //FRelatica EnterRelatica = new FRelatica();
             //EnterRelatica.Procede(PublicVar.driver3, cbKat.Text, cbOpstina.Text, tbArea.Text, tbCena.Text, tbGodiste.Text, cbBrSoba.Text, tbBrKup.Text, tbKvad.Text, tbDvoriste.Text, rtbOpis.Text);
-            FNekretnine365 startSeven = new FNekretnine365();
-            startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
-            //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
-            //EnterNekretnineRs.Proceed(PublicVar.driver7);
+            //FNekretnine365 startSeven = new FNekretnine365();
+            //startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
+            FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
+            EnterNekretnineRs.Proceed(PublicVar.driver7);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
