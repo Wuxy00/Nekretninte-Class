@@ -26,7 +26,7 @@ namespace Nekretninte_Class
 {
     class FNekretnine365
     {
-        public void Procede(IWebDriver driver, string cbKat, string tbNaslov, string tbKvad, string cbSprat, string cbBrSoba, string tbBrKup, string tbCena,bool chS, bool chJ, bool chI, bool chZ, bool chJZ, bool chSZ, bool chSI,bool chJI, string tbGodiste, string cbOpstina, string tbBrLift, string tbGaraza)
+        public void Procede(IWebDriver driver, string cbKat, string tbNaslov, string tbKvad, string cbSprat, string cbBrSoba, string tbBrKup, string tbCena,bool chS, bool chJ, bool chI, bool chZ, bool chJZ, bool chSZ, bool chSI,bool chJI, string tbGodiste, string cbOpstina, string tbBrLift, string tbGaraza, string cbGrejanje, string tbParking, string rtbOpis)
         {
             driver.Url = "https://www.nekretnine365.com/upis-oglasa.html";
 
@@ -34,13 +34,13 @@ namespace Nekretninte_Class
             oSelect.SelectByText(cbKat);//Tip;
 
             driver.FindElement(By.Id("next_step")).Click();
-
+            var wait3 = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
             driver.FindElement(By.XPath("//*[@id='controller_area']/div/form/div[2]/input")).Click();
 
             driver.FindElement(By.XPath("//*[@id='area_title_bs']/input")).SendKeys(tbNaslov);
 
             driver.FindElement(By.XPath("//*[@id='css_INPUT_2']")).Click();
-
+            var wait4 = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
             driver.FindElement(By.XPath("//*[@id='sf_field_square_feet']/input")).SendKeys(tbKvad);
 
             driver.FindElement(By.XPath("//*[@id='sf_field_floor']/input")).SendKeys(cbSprat); // Sprat
@@ -76,11 +76,25 @@ namespace Nekretninte_Class
 
             driver.FindElement(By.XPath("//*[@id='sf_field_quarter']/input")).SendKeys(cbOpstina);
 
+            if ("Centralno(CG)" == cbGrejanje) { driver.FindElement(By.XPath("//*[@id='css_INPUT_61']")).Click(); }
+
             if (int.Parse(tbBrLift)>0) { driver.FindElement(By.XPath("//*[@id='css_INPUT_57']")).Click(); }
 
-            if(int.Parse(tbGaraza)>0) driver.FindElement(By.XPath("//*[@id='css_INPUT_79']")).Click();
+            if (int.Parse(tbGaraza) > 0) { driver.FindElement(By.XPath("//*[@id='css_INPUT_79']")).Click(); }
 
+            if(int.Parse(tbParking)>0){ driver.FindElement(By.XPath("//*[@id='sf_field_parkingno']/input")).SendKeys(tbParking); }
 
+            driver.FindElement(By.XPath("//*[@id='cke_1_contents']")).SendKeys(rtbOpis);
+
+            driver.FindElement(By.XPath("//*[@id='controller_area']/div/form/div[2]/div[2]/div/div[1]/div/input[1]")).SendKeys("zmajvukasin@gmail.com");
+
+            driver.FindElement(By.XPath("//*[@id='controller_area']/div/form/div[2]/div[2]/div/div[1]/div/input[2]")).SendKeys("daca2012");
+
+            driver.FindElement(By.XPath("//*[@id='recaptcha-anchor']/div[5]")).Click();
+
+            var wait2 = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
+
+            driver.FindElement(By.XPath("//*[@id='controller_area']/div/form/span/input")).Submit();
         }
     }
 }

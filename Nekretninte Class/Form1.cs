@@ -71,9 +71,9 @@ namespace Nekretninte_Class
             ////startSix.End();
             ////Start loging on Nekretnine365.com
 
-            //LNekretnine365 startSeven = new LNekretnine365();
-            //startSeven.Setup(PublicVar.driver6);
-            //startSeven.Procede(PublicVar.driver6, textBox1.Text, textBox2.Text);
+            LNekretnine365 startSeven = new LNekretnine365();
+            startSeven.Setup(PublicVar.driver6);
+            startSeven.Procede(PublicVar.driver6, textBox1.Text, textBox2.Text);
 
             //startSeven.End();
 
