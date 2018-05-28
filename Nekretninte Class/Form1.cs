@@ -36,9 +36,9 @@ namespace Nekretninte_Class
             ////start.End();
             ////Start program by loging in Srbija - nekretnine.org       
 
-            LSrbijaNekretnineByPass startSecond = new LSrbijaNekretnineByPass();
-            startSecond.Setup(PublicVar.driver1);
-            startSecond.Procede(PublicVar.driver1, textBox1.Text, textBox2.Text);
+            //LSrbijaNekretnineByPass startSecond = new LSrbijaNekretnineByPass();
+            //startSecond.Setup(PublicVar.driver1);
+            //startSecond.Procede(PublicVar.driver1, textBox1.Text, textBox2.Text);
 
             //////startSecond.End();
             //////Start program by loging in Srbija - nadjidom.com
@@ -62,9 +62,11 @@ namespace Nekretninte_Class
 
             ////startFive.End();
 
-            //LIndomio startSix = new LIndomio();
-            //startSix.Setup(PublicVar.driver5);
-            //startSix.Procede(PublicVar.driver5, textBox1.Text, textBox2.Text);
+            LIndomio startSix = new LIndomio();
+            FIndomio popuni = new FIndomio();
+            startSix.Setup(PublicVar.driver5);
+            startSix.Procede(PublicVar.driver5, textBox1.Text, textBox2.Text);
+            popuni.Procede(PublicVar.driver5, "Palilula", "Garaza", "Lalinac", "TA", true, "1967", "U izgradnji", 1000, "5");
 
             ////startSix.End();
             ////Start loging on Nekretnine365.com

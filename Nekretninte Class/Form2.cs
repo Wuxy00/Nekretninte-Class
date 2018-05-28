@@ -168,5 +168,10 @@ namespace Nekretninte_Class
         {
             PicOnSite.Submit(PublicVar.driver);
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
