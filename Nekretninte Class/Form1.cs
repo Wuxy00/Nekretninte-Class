@@ -36,9 +36,9 @@ namespace Nekretninte_Class
             ////start.End();
             ////Start program by loging in Srbija - nekretnine.org       
 
-            LSrbijaNekretnineByPass startSecond = new LSrbijaNekretnineByPass();
-            startSecond.Setup(PublicVar.driver1);
-            startSecond.Procede(PublicVar.driver1, textBox1.Text, textBox2.Text);
+            //LSrbijaNekretnineByPass startSecond = new LSrbijaNekretnineByPass();
+            //startSecond.Setup(PublicVar.driver1);
+            //startSecond.Procede(PublicVar.driver1, textBox1.Text, textBox2.Text);
 
             //////startSecond.End();
             //////Start program by loging in Srbija - nadjidom.com
@@ -69,9 +69,9 @@ namespace Nekretninte_Class
             ////startSix.End();
             ////Start loging on Nekretnine365.com
 
-            //LNekretnine365 startSeven = new LNekretnine365();
-            //startSeven.Setup(PublicVar.driver6);
-            //startSeven.Procede(PublicVar.driver6, textBox1.Text, textBox2.Text);
+            LNekretnine365 startSeven = new LNekretnine365();
+            startSeven.Setup(PublicVar.driver6);
+            startSeven.Procede(PublicVar.driver6, textBox1.Text, textBox2.Text);
 
             //startSeven.End();
 
