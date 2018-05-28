@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="FIndomio.cs" />
     <Compile Include="FMojTrg.cs" />
+    <Compile Include="FNekretnine365.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +70,7 @@
     </Compile>
     <Compile Include="LIndomio.cs" />
     <Compile Include="LMojTrg.cs" />
+    <Compile Include="LNekretnine365.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="FNadjiDom.cs" />
     <Compile Include="LNadjiDomLogin.cs" />
