@@ -77,3 +77,19 @@ C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\N
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.exe
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.pdb
 C:\Users\wukas\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csprojAssemblyReference.cache
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csprojAssemblyReference.cache
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form1.resources
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form2.resources
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Properties.Resources.resources
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.GenerateResource.cache
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CoreCompileInputs.cache
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.exe
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.pdb
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Nekretninte Class.exe.config
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Nekretninte Class.exe
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Nekretninte Class.pdb
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.dll
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.Support.dll
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.xml
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.Support.xml
+E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete

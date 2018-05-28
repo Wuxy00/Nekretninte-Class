@@ -5,18 +5,21 @@
  *
  * Filename    : PublicVar.cs
  *
- * Created By  : Vukašin Stamenković
+ * Created By  : Vukašin Stamenković & Dimitrije Iskrenović
  *
  * Based On    : 
  *
  * Hardware    :
  *
- * Description : Public variable IWebDriver starting only one Chrome tab for whole Program
+ * Description : Public variable IWebDriver starting only one Chrome tab for whole Program.
+ * WaitUntilElementExists waits for the element to be found.
  *               
  *
  *****************************************************************************/
+using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 
 namespace Nekretninte_Class
 {
@@ -24,10 +27,27 @@ namespace Nekretninte_Class
     {
         public static IWebDriver driver = new ChromeDriver(); // 4 zida
         public static IWebDriver driver1 = new ChromeDriver(); // srbija-nekretnine
-        public static IWebDriver driver2 = new ChromeDriver(); // nadji dom
-        public static IWebDriver driver3 = new ChromeDriver(); // retalica
-        public static IWebDriver driver4 = new ChromeDriver(); // mojtrg
-        public static IWebDriver driver5 = new ChromeDriver(); // indomio
-        public static IWebDriver driver6 = new ChromeDriver(); // Nekretnine365
+        //public static IWebDriver driver2 = new ChromeDriver(); // nadji dom
+        //public static IWebDriver driver3 = new ChromeDriver(); // retalica
+        //public static IWebDriver driver4 = new ChromeDriver(); // mojtrg
+        //public static IWebDriver driver5 = new ChromeDriver(); // indomio
+        //public static IWebDriver driver6 = new ChromeDriver(); // Nekretnine365
+        //public static IWebDriver driver7 = new ChromeDriver(); // Nekretnine.rs
+
+
+
+        public static IWebElement WaitUntilElementExists(IWebDriver driver, By elementLocator, int timeout) //Wait until the element is found.
+        {
+            try
+            {
+                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
+                return wait.Until(ExpectedConditions.ElementExists(elementLocator));
+            }
+            catch (NoSuchElementException)
+            {
+                Console.WriteLine("Element with locator: '" + elementLocator + "' was not found in current context page.");
+                throw;
+            }
+        }
     }
 }

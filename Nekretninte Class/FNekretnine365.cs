@@ -26,7 +26,7 @@ namespace Nekretninte_Class
 {
     class FNekretnine365
     {
-        public void Procede(IWebDriver driver, string cbKat, string tbNaslov, string tbKvad, string cbSprat, string cbBrSoba, string tbBrKup, string tbCena,bool chS, bool chJ, bool chI, bool chZ, bool chJZ, bool chSZ, bool chSI,bool chJI, string tbGodiste, string cbOpstina, string tbBrLift)
+        public void Procede(IWebDriver driver, string cbKat, string tbNaslov, string tbKvad, string cbSprat, string cbBrSoba, string tbBrKup, string tbCena,bool chS, bool chJ, bool chI, bool chZ, bool chJZ, bool chSZ, bool chSI,bool chJI, string tbGodiste, string cbOpstina, string tbBrLift, string tbGaraza)
         {
             driver.Url = "https://www.nekretnine365.com/upis-oglasa.html";
 
