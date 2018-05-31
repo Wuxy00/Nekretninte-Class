@@ -33,6 +33,7 @@ namespace Nekretninte_Class
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             IWebElement div = driver.FindElement(By.XPath("//*[@id='loginDialog']"));          
             IWebElement usernameField = PublicVar.WaitUntilElementExists(driver, By.XPath("//*[@id='loginUsername']"), 5);
+            
             usernameField.SendKeys("vukasinlegenda");
             div.FindElement(By.XPath("//*[@id='loginPassword']")).SendKeys(password);
             div.FindElement(By.XPath("//*[@id='btnLogin']")).Click();            

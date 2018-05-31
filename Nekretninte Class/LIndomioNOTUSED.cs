@@ -33,6 +33,9 @@ namespace Nekretninte_Class
         }
         public void Procede(IWebDriver driver, string username, string password)
         {
+            //*[@id='fieldPassword']
+            //*[@id="fieldEmail"]
+            //*[@id='form-login']/button
             driver.FindElement(By.Id("fieldEmail")).SendKeys(username);
             driver.FindElement(By.Id("fieldPassword")).SendKeys(password);
             driver.FindElement(By.CssSelector("#form-login > button")).Submit();

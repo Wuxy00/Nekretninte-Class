@@ -18,7 +18,7 @@ using OpenQA.Selenium;
 
 namespace Nekretninte_Class
 {
-    class LRelaticaLogin
+    class LRelaticaLoginNOTUSED
     {
         string url = "https://www.realitica.com/index.php?action=member_login&lng=hr";
         public void Setup(IWebDriver driver)

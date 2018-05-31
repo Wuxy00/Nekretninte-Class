@@ -27,6 +27,8 @@ namespace Nekretninte_Class
         }
         public void Procced(IWebDriver driver, string username, string password)
         {
+            //*[@id="login_username"]
+            //*[@id='login_password']
             driver.FindElement(By.Id("login_username")).SendKeys(username);
             driver.FindElement(By.Id("login_password")).SendKeys(password);
             driver.FindElement(By.XPath("//*[@id='loginForm']/div[4]/input")).Click();

@@ -18,7 +18,7 @@ using OpenQA.Selenium;
 
 namespace Nekretninte_Class
 {
-    class LNekretnine365
+    class LNekretnine365NOTUSED
     {
         string url = "https://www.nekretnine365.com/login.html";
         public void Setup(IWebDriver driver)
