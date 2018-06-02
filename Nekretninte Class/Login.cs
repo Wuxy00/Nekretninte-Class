@@ -15,6 +15,7 @@
  *
  *****************************************************************************/
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 
 
@@ -53,12 +54,15 @@ namespace Nekretninte_Class
             driver.FindElement(By.XPath(XPathP)).SendKeys(textPass);
             driver.FindElement(By.Id(IdB)).Click();
         }
-        public void ProccedByPassDica(IWebDriver driver, string textPass)
+        public void ProccedByPassDica(IWebDriver driver)
         {
+            WebDriverWait wait = new WebDriverWait(driver,TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='ajax_login']/div/a")));
             driver.FindElement(By.XPath("//*[@id='ajax_login']/div/a")).Click();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
-            driver.FindElement(By.XPath("//*[@id='loginUsername']")).SendKeys("vukasinlegenda");
-            driver.FindElement(By.XPath("//*[@id='loginPassword']")).SendKeys(textPass);
+            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='loginUsername']")));
+            driver.FindElement(By.XPath("//*[@id='loginUsername']")).SendKeys("agencija KODEKS");
+            driver.FindElement(By.XPath("//*[@id='loginPassword']")).SendKeys("1DvaTri4");
             driver.FindElement(By.XPath("//*[@id='btnLogin']")).Click();
         }
     }

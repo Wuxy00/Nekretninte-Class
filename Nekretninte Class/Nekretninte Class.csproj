@@ -72,7 +72,6 @@
     <Compile Include="LIndomioNOTUSED.cs" />
     <Compile Include="LMojTrgNOTUSED.cs" />
     <Compile Include="LNekretnine365NOTUSED.cs" />
-    <Compile Include="LNekretnineRs.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="FNadjiDom.cs" />
     <Compile Include="LNadjiDomLoginNOTUSED.cs" />
