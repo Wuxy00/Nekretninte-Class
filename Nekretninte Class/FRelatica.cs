@@ -42,7 +42,8 @@ namespace Nekretninte_Class
             SelectElement oSelectZemlja = new SelectElement(driver.FindElement(By.Id("country")));
             oSelectZemlja.SelectByValue("Serbia");
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(1));
-            SelectElement oSelectGrad = new SelectElement(driver.FindElement(By.Id("region")));
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
+            SelectElement oSelectGrad = new SelectElement(driver.FindElement(By.XPath("//*[@id='region']")));// driver.FindElement(By.Id("region")));
             oSelectZemlja.SelectByText("Niš"); /// BUg FIXXXXX TODO!!!!!!
             var wait1 = new WebDriverWait(driver, TimeSpan.FromSeconds(1));
             SelectElement oSelectOpstina = new SelectElement(driver.FindElement(By.Id("municipality"))); // OPŠTINA

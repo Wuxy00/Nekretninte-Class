@@ -41,16 +41,23 @@ namespace Nekretninte_Class
             //cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text,*/ rtbOpis.Text);
             //cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex, cbGrejanje.SelectedIndex);
             //FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
-            //EnterAllSrbiaNek.Procede(PublicVar.driver1, tbNaslov.Text, tbArea.Text/*, tbAdresa.Text, tbBroj.Text*/, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text);
+            //EnterAllSrbiaNek.Procede(PublicVar.driver, tbNaslov.Text, tbArea.Text/*, tbAdresa.Text, tbBroj.Text*/, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text,cbGrejanje.Text, cbBrSoba.Text);
+            //UploadPics relatica = new UploadPics();
+            //relatica.Submit(PublicVar.driver,"//*[@id='dodaj - fotografiju']","");
             //FNadjiDom EnterAllNadjiDom = new FNadjiDom();
             ////EnterAllNadjiDom.Procede(PublicVar.driver2, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbGrupa.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, tbDvoriste.Text, cbBrSoba.Text, cbGrejanje.Text,tbBrLift.Text,cbUknjizeno.Text, tbPrikTel.Text,chPodrum.Checked,tbParking.Text,tbGaraza.Text,tbBrInterfon.Text);
             //FRelatica EnterRelatica = new FRelatica();
-            //EnterRelatica.Procede(PublicVar.driver3, cbKat.Text, cbOpstina.Text, tbArea.Text, tbCena.Text, tbGodiste.Text, cbBrSoba.Text, tbBrKup.Text, tbKvad.Text, tbDvoriste.Text, rtbOpis.Text);
+            //EnterRelatica.Procede(PublicVar.driver, cbKat.Text, cbOpstina.Text, tbArea.Text, tbCena.Text, tbGodiste.Text, cbBrSoba.Text, tbBrKup.Text, tbKvad.Text, tbDvoriste.Text, rtbOpis.Text);
+            //UploadPics relatica = new UploadPics();
+            //relatica.Submit(PublicVar.driver, "//*[@id='content_holder']/table[1]/tbody/tr[2]/td[2]/form/input[4]", "https://www.realitica.com/?action=edit_listing_images_get&edit=1593176&lng=hr");
+
             //FNekretnine365 startSeven = new FNekretnine365();
-            //startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
-            FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
-            EnterNekretnineRs.Setup(PublicVar.driver);
-            EnterNekretnineRs.Proceed(PublicVar.driver,rbIzdavanje.Checked, cbOkrug.Text);
+            //startSeven.Procede(PublicVar.driver, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
+            //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
+            //EnterNekretnineRs.Setup(PublicVar.driver);
+            //EnterNekretnineRs.Proceed(PublicVar.driver,rbIzdavanje.Checked, cbOkrug.Text);
+            FFacebook fillFace = new FFacebook();
+            fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -166,10 +173,10 @@ namespace Nekretninte_Class
             Form1 loginScreen = new Form1();
             loginScreen.Show();
         }
-        UploadPics PicOnSite = new UploadPics();
+        //UploadPics PicOnSite = new UploadPics();
         private void button3_Click(object sender, EventArgs e)
         {
-            PicOnSite.Submit(PublicVar.driver);
+            //PicOnSite.Submit(PublicVar.driver);
         }
 
         private void Form2_Load(object sender, EventArgs e)

@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FFacebook.cs" />
     <Compile Include="FIndomio.cs" />
     <Compile Include="FMojTrg.cs" />
     <Compile Include="FNekretnine365.cs" />
@@ -69,21 +70,15 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="LIndomioNOTUSED.cs" />
-    <Compile Include="LMojTrgNOTUSED.cs" />
-    <Compile Include="LNekretnine365NOTUSED.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="FNadjiDom.cs" />
-    <Compile Include="LNadjiDomLoginNOTUSED.cs" />
     <Compile Include="PlaceCategory.cs" />
     <Compile Include="CetriZida.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicVar.cs" />
     <Compile Include="FRelatica.cs" />
-    <Compile Include="LRelaticaLoginNOTUSED.cs" />
     <Compile Include="SelectFromStructureGroup1.cs" />
-    <Compile Include="LSrbijaNekretnineByPassNOTUSED.cs" />
     <Compile Include="FSrbijaNekretnineOglas.cs" />
     <Compile Include="UploadPics.cs" />
     <EmbeddedResource Include="Form1.resx">
