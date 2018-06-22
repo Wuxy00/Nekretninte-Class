@@ -9,6 +9,10 @@ namespace Nekretninte_Class
 {
     class UploadPics
     {
-        public void Submit(IWebDriver driver) => driver.FindElement(By.XPath("//*[@id='media']/div/div/div[1]/div[1]/div[1]/button")).Click();
+        public void Submit(IWebDriver driver, string XPATH,string url)
+        {
+            //driver.Url = url;
+            driver.FindElement(By.XPath(XPATH)).SendKeys("C:\\Users\\wukas\\Desktop\\Untitled.png");
+        }
     }
 }
