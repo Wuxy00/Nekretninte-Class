@@ -30,10 +30,10 @@ namespace Nekretninte_Class
         {
             //Start program by loging in 4zida.rs
 
-            //Login CetriZida = new Login();
-            //CetriZida.Setup(PublicVar.driver, "https://www.4zida.rs/login");
-            //var wait = new WebDriverWait(PublicVar.driver, TimeSpan.FromSeconds(5));
-            //CetriZida.ProccedID(PublicVar.driver, "kodeksimovina@mts.rs", "12345678", "//*[@id='username']", "//*[@id='password']", "end-buttons");//BUGFIX LOGIN
+            Login CetriZida = new Login();
+            CetriZida.Setup(PublicVar.driver, "https://www.4zida.rs/login");
+            var wait = new WebDriverWait(PublicVar.driver, TimeSpan.FromSeconds(5));
+            CetriZida.ProccedID(PublicVar.driver, "kodeksimovina@mts.rs", "12345678", "//*[@id='username']", "//*[@id='password']", "end-buttons");//BUGFIX LOGIN
 
             //Login Relatica = new Login();
             //Relatica.Setup(PublicVar.driver, "https://www.realitica.com/index.php?action=member_login&lng=hr");
@@ -61,9 +61,9 @@ namespace Nekretninte_Class
             //SrbijaNekretnine.Setup(PublicVar.driver, "https://srbija-nekretnine.org/agencija/registracija?oglas=1");
             //SrbijaNekretnine.ProccedByPass(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='UsernameTxt']", "//*[@id='PasswordTxt']", "//*[@id='prijaviBtn']", "//*[@id='integrityPrijavaTxt']");
 
-            Login NekretnineRs = new Login();
-            NekretnineRs.Setup(PublicVar.driver, "https://www.nekretnine.rs/");
-            NekretnineRs.ProccedByPassDica(PublicVar.driver);
+            //Login NekretnineRs = new Login();
+            //NekretnineRs.Setup(PublicVar.driver, "https://www.nekretnine.rs/");
+            //NekretnineRs.ProccedByPassDica(PublicVar.driver);
 
             //Login Facebook = new Login();
             //Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
