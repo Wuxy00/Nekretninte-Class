@@ -55,7 +55,10 @@ namespace Nekretninte_Class
             //startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
             FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
             EnterNekretnineRs.Setup(PublicVar.driver);
-            EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text, tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text);            
+            EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text, 
+                tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
+                ,tbBrojTerasa.Text, tbDvoriste.Text,tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked,chPodrum.Checked,tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
+                ,cbStanje.Text);            
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
 
@@ -77,7 +80,7 @@ namespace Nekretninte_Class
             {
                 tbCena.Show();
                 tbKvad.Show();
-                tbArea.Show();
+                
                 tbGodiste.Show();
                 tbBrojLodja.Show();
                 tbBrojTerasa.Show();
@@ -139,8 +142,7 @@ namespace Nekretninte_Class
         private void VratiNaDefault()
         {
             tbCena.Show();
-            tbKvad.Show();
-            tbArea.Show();
+            tbKvad.Show();            
             tbGodiste.Show();
             tbBrojLodja.Show();
             tbBrojTerasa.Show();

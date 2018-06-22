@@ -61,13 +61,13 @@ namespace Nekretninte_Class
             //SrbijaNekretnine.Setup(PublicVar.driver, "https://srbija-nekretnine.org/agencija/registracija?oglas=1");
             //SrbijaNekretnine.ProccedByPass(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='UsernameTxt']", "//*[@id='PasswordTxt']", "//*[@id='prijaviBtn']", "//*[@id='integrityPrijavaTxt']");
 
-            //Login NekretnineRs = new Login();
-            //NekretnineRs.Setup(PublicVar.driver, "https://www.nekretnine.rs/");
-            //NekretnineRs.ProccedByPassDica(PublicVar.driver);
+            Login NekretnineRs = new Login();
+            NekretnineRs.Setup(PublicVar.driver, "https://www.nekretnine.rs/");
+            NekretnineRs.ProccedByPassDica(PublicVar.driver);
 
-            Login Facebook = new Login();
-            Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
-            Facebook.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='email']", "//*[@id='pass']", "//*[@id='u_0_2']");
+            //Login Facebook = new Login();
+            //Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
+            //Facebook.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='email']", "//*[@id='pass']", "//*[@id='u_0_2']");
 
             Form2 form2 = new Form2(); // Nextform
             form2.Show();
