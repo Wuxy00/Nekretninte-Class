@@ -30,10 +30,10 @@ namespace Nekretninte_Class
         {
             //Start program by loging in 4zida.rs
 
-            //Login CetriZida = new Login();
-            //CetriZida.Setup(PublicVar.driver, "https://www.4zida.rs/login");
-            //var wait = new WebDriverWait(PublicVar.driver, TimeSpan.FromSeconds(5));
-            //CetriZida.ProccedID(PublicVar.driver, "kodeksimovina@mts.rs", "12345678", "//*[@id='username']", "//*[@id='password']", "end-buttons");//BUGFIX LOGIN
+            Login CetriZida = new Login();
+            CetriZida.Setup(PublicVar.driver, "https://www.4zida.rs/login");
+            var wait = new WebDriverWait(PublicVar.driver, TimeSpan.FromSeconds(5));
+            CetriZida.ProccedID(PublicVar.driver, "kodeksimovina@mts.rs", "12345678", "//*[@id='username']", "//*[@id='password']", "end-buttons");//BUGFIX LOGIN
 
             //Login Relatica = new Login();
             //Relatica.Setup(PublicVar.driver, "https://www.realitica.com/index.php?action=member_login&lng=hr");

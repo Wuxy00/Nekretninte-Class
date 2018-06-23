@@ -36,12 +36,10 @@
             this.tbKvad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbArea = new System.Windows.Forms.TextBox();
             this.tbGodiste = new System.Windows.Forms.TextBox();
             this.tbBrojLodja = new System.Windows.Forms.TextBox();
             this.tbBrojTerasa = new System.Windows.Forms.TextBox();
             this.tbPrikTel = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -177,13 +175,6 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Kvadrati";
             // 
-            // tbArea
-            // 
-            this.tbArea.Location = new System.Drawing.Point(364, 245);
-            this.tbArea.Name = "tbArea";
-            this.tbArea.Size = new System.Drawing.Size(100, 20);
-            this.tbArea.TabIndex = 8;
-            // 
             // tbGodiste
             // 
             this.tbGodiste.Location = new System.Drawing.Point(152, 285);
@@ -211,15 +202,6 @@
             this.tbPrikTel.Name = "tbPrikTel";
             this.tbPrikTel.Size = new System.Drawing.Size(100, 20);
             this.tbPrikTel.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(383, 229);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Deo grada";
             // 
             // label6
             // 
@@ -758,15 +740,15 @@
             "Vinik",
             "Vrežina",
             "Ženeva (Devizno naselje)"});
-            this.cbOkrug.Location = new System.Drawing.Point(140, 205);
+            this.cbOkrug.Location = new System.Drawing.Point(149, 200);
             this.cbOkrug.Name = "cbOkrug";
-            this.cbOkrug.Size = new System.Drawing.Size(121, 21);
+            this.cbOkrug.Size = new System.Drawing.Size(103, 21);
             this.cbOkrug.TabIndex = 68;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(149, 190);
+            this.label5.Location = new System.Drawing.Point(158, 185);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 69;
@@ -819,12 +801,10 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.tbPrikTel);
             this.Controls.Add(this.tbBrojTerasa);
             this.Controls.Add(this.tbBrojLodja);
             this.Controls.Add(this.tbGodiste);
-            this.Controls.Add(this.tbArea);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbKvad);
@@ -856,12 +836,10 @@
         private System.Windows.Forms.TextBox tbKvad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbArea;
         private System.Windows.Forms.TextBox tbGodiste;
         private System.Windows.Forms.TextBox tbBrojLodja;
         private System.Windows.Forms.TextBox tbBrojTerasa;
         private System.Windows.Forms.TextBox tbPrikTel;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;

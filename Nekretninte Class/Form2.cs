@@ -37,8 +37,10 @@ namespace Nekretninte_Class
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //CetriZida cetriZida = new CetriZida();
-            //cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, tbArea.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text,*/ rtbOpis.Text);
+            CetriZida cetriZida = new CetriZida();
+            cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, cbOkrug.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, 
+                tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, 
+                /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text,*/ rtbOpis.Text, rbProdavanje.Checked);
             //cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex, cbGrejanje.SelectedIndex);
             //FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
             //EnterAllSrbiaNek.Procede(PublicVar.driver, tbNaslov.Text, tbArea.Text/*, tbAdresa.Text, tbBroj.Text*/, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text,cbGrejanje.Text, cbBrSoba.Text);
@@ -52,14 +54,25 @@ namespace Nekretninte_Class
             //relatica.Submit(PublicVar.driver, "//*[@id='content_holder']/table[1]/tbody/tr[2]/td[2]/form/input[4]", "https://www.realitica.com/?action=edit_listing_images_get&edit=1593176&lng=hr");
 
             //FNekretnine365 startSeven = new FNekretnine365();
-            //startSeven.Procede(PublicVar.driver, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
+            //startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
             //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
+
             //EnterNekretnineRs.Setup(PublicVar.driver);
+<<<<<<< HEAD
             //EnterNekretnineRs.Proceed(PublicVar.driver,rbIzdavanje.Checked, cbOkrug.Text);
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
             FIndomio fi = new FIndomio();
             fi.Procede(PublicVar.driver5, cbOpstina.Text,cbOkrug.Text, "neki", "centralno", true, "2007", "dobro", 0235353, "5");
+=======
+            //EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text, 
+            //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
+            //    ,tbBrojTerasa.Text, tbDvoriste.Text,tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked,chPodrum.Checked,tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
+            //    ,cbStanje.Text);
+
+            //FFacebook fillFace = new FFacebook();
+            //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
+>>>>>>> fb96dbc32e0f9fb511bc401ab35b8a2c85f19264
 
         }
 
@@ -81,7 +94,7 @@ namespace Nekretninte_Class
             {
                 tbCena.Show();
                 tbKvad.Show();
-                tbArea.Show();
+                
                 tbGodiste.Show();
                 tbBrojLodja.Show();
                 tbBrojTerasa.Show();
@@ -143,8 +156,7 @@ namespace Nekretninte_Class
         private void VratiNaDefault()
         {
             tbCena.Show();
-            tbKvad.Show();
-            tbArea.Show();
+            tbKvad.Show();            
             tbGodiste.Show();
             tbBrojLodja.Show();
             tbBrojTerasa.Show();
