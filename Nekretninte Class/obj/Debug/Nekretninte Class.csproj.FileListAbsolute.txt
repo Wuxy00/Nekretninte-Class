@@ -68,7 +68,6 @@ C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\W
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.Support.dll
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.xml
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.Support.xml
-C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csprojResolveAssemblyReference.cache
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form1.resources
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form2.resources
 C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Properties.Resources.resources
@@ -93,3 +92,5 @@ E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug
 E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.xml
 E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\WebDriver.Support.xml
 E:\WORK\Programing\Projects\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete
+C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csprojAssemblyReference.cache
+C:\Users\Danilo\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete

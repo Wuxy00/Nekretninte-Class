@@ -53,9 +53,9 @@ namespace Nekretninte_Class
             //MojTrg.Procced(PublicVar.driver, "kodeksimovina@open.telekom.rs", "1DvaTri4", "//*[@id='Email']", "//*[@id='Password']", "/html/body/section/div[1]/div/div[1]/div[1]/form/div[2]/div/div[1]/input");
 
 
-            //Login Indomio = new Login();
-            //Indomio.Setup(PublicVar.driver, "https://crm.indomio.com/sr/login");
-            //Indomio.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='fieldEmail']", "//*[@id='fieldPassword']", "//*[@id='form-login']/button");
+            Login Indomio = new Login();
+            Indomio.Setup(PublicVar.driver5, "https://crm.indomio.com/sr/login");
+            Indomio.Procced(PublicVar.driver5, "dmilosevic252@gmail.com", "daca2012", "//*[@id='fieldEmail']", "//*[@id='fieldPassword']", "//*[@id='form-login']/button");
 
             //Login SrbijaNekretnine = new Login();
             //SrbijaNekretnine.Setup(PublicVar.driver, "https://srbija-nekretnine.org/agencija/registracija?oglas=1");
@@ -65,9 +65,9 @@ namespace Nekretninte_Class
             //NekretnineRs.Setup(PublicVar.driver, "https://www.nekretnine.rs/");
             //NekretnineRs.ProccedByPassDica(PublicVar.driver);
 
-            Login Facebook = new Login();
-            Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
-            Facebook.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='email']", "//*[@id='pass']", "//*[@id='u_0_2']");
+            //Login Facebook = new Login();
+            //Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
+            //Facebook.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='email']", "//*[@id='pass']", "//*[@id='u_0_2']");
 
             Form2 form2 = new Form2(); // Nextform
             form2.Show();

@@ -27,32 +27,35 @@ namespace Nekretninte_Class
 {
     class FIndomio
     {
-        public void Procede(IWebDriver driver,string opstina,string tip,string deoGrada,string grejanje,bool garaza,string godina,string stanje,double cena,string sprat)
+        public void Procede(IWebDriver driver,string opstina,string deoGrada, string tip, string grejanje,bool garaza,string godina,string stanje,double cena,string sprat)
         {
             
             driver.Url = "https://crm.indomio.com/sr/dashboard";
-
-            //biraj zemlju
-            driver.FindElement(By.CssSelector("#shortcuts > li:nth-child(3) > a")).Click();
+            //PublicVar.WaitUntilElementExists(driver, By.CssSelector("#shortcuts > li:nth-child(3) > a"), 20);
+            //driver.FindElement(By.CssSelector("#shortcuts > li:nth-child(3) > a")).Click();
             driver.Url = "https://crm.indomio.com/sr/editListing/create";
+            
+            //biraj zemlju
             driver.FindElement(By.CssSelector("#countryContainer > span > span.select-value")).Click();
             driver.FindElement(By.XPath("/html/body/span/span[3]/span[2]")).Click();
 
 
-            PublicVar.WaitUntilElementExists(driver, By.CssSelector("#regionsContainer > span > span.select-value"), 1);
+            PublicVar.WaitUntilElementExists(driver, By.CssSelector("#regionsContainer > span > span.select-value"), 100000);
+            
             //biraj okrug
             driver.FindElement(By.CssSelector("#regionsContainer > span > span.select-value")).Click();
             driver.FindElement(By.XPath("/html/body/span/span[3]/span[14]")).Click();
 
             //biraj opstinu
-            PublicVar.WaitUntilElementExists(driver, By.CssSelector("#munContainer > span > span.select-value"), 1);
-            driver.FindElement(By.CssSelector("#munContainer > span > span.select-value")).Click();
+            PublicVar.WaitUntilElementExists(driver, By.CssSelector("#munContainer > span > span.select-arrow"), 100000);
+            driver.FindElement(By.CssSelector("#munContainer > span > span.select-arrow")).Click();
             string opst = "niš-" + opstina.ToLower() ;
             bool nastavi = true;
             for(int i = 6; i <= 10 && nastavi; i++)
             {
-                PublicVar.WaitUntilElementExists(driver, By.XPath("/html/body/span[3]/span[" + i + "]"), 1);
-                var opcija = driver.FindElement(By.XPath("/html/body/span[3]/span["+i+"]"));
+                string putanja = "body > span > span.drop-down.custom-scroll > span:nth-child("+i+")";
+                PublicVar.WaitUntilElementExists(driver, By.CssSelector(putanja), 20);
+                var opcija = driver.FindElement(By.CssSelector(putanja));
                 if (opcija.GetAttribute("textContent").ToLower() == opst)
                 {
                     opcija.Click();
@@ -60,7 +63,8 @@ namespace Nekretninte_Class
                 }
             }
             // biraj naselje
-            driver.FindElement(By.CssSelector("# hoodContainer > span > span.select-value")).Click();
+            PublicVar.WaitUntilElementExists(driver, By.CssSelector("#hoodContainer > span > span.select-value"), 100000);
+            driver.FindElement(By.CssSelector("#hoodContainer > span > span.select-value")).Click();
             nastavi = true;
             int granica = 0;
             switch (opstina)
@@ -81,8 +85,9 @@ namespace Nekretninte_Class
             }
             for (int i = 2; i <= granica && nastavi; i++)
             {
-                var opcija = driver.FindElement(By.XPath("/html/body/span[3]/span[" + i + "]"));
-                if (opcija.GetAttribute("textContent").ToLower() == deoGrada)
+                PublicVar.WaitUntilElementExists(driver, By.CssSelector("body > span > span.drop-down.custom-scroll > span:nth-child("+i+")"), 100000);
+                var opcija = driver.FindElement(By.CssSelector("body > span > span.drop-down.custom-scroll > span:nth-child(" + i + ")"));
+                if (opcija.GetAttribute("textContent").ToLower() == deoGrada.ToLower())
                 {
                     opcija.Click();
                     nastavi = false;
