@@ -48,5 +48,11 @@ namespace Nekretninte_Class
                 throw;
             }
         }
+        public static void ScrollUntilVisible(IWebDriver driverZ,IWebElement NonVisibleElement,bool centriran)
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driverZ;
+            if(centriran)js.ExecuteScript("arguments[0].scrollIntoView(true);", NonVisibleElement);
+            else js.ExecuteScript("arguments[0].scrollIntoView(false);", NonVisibleElement);
+        }
     }
 }

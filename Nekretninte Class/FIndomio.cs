@@ -30,24 +30,24 @@ namespace Nekretninte_Class
         public void Procede(IWebDriver driver,string opstina,string deoGrada, string tip, string grejanje,bool garaza,string godina,string stanje,double cena,string sprat)
         {
             
-            driver.Url = "https://crm.indomio.com/sr/dashboard";
-            //PublicVar.WaitUntilElementExists(driver, By.CssSelector("#shortcuts > li:nth-child(3) > a"), 20);
-            //driver.FindElement(By.CssSelector("#shortcuts > li:nth-child(3) > a")).Click();
+            
+            
             driver.Url = "https://crm.indomio.com/sr/editListing/create";
             
             //biraj zemlju
+
             driver.FindElement(By.CssSelector("#countryContainer > span > span.select-value")).Click();
             driver.FindElement(By.XPath("/html/body/span/span[3]/span[2]")).Click();
 
-
-            PublicVar.WaitUntilElementExists(driver, By.CssSelector("#regionsContainer > span > span.select-value"), 100000);
-            
             //biraj okrug
+            PublicVar.WaitUntilElementExists(driver, By.CssSelector("#regionsContainer > span > span.select-value"), 100000);
+            System.Threading.Thread.Sleep(200);
             driver.FindElement(By.CssSelector("#regionsContainer > span > span.select-value")).Click();
             driver.FindElement(By.XPath("/html/body/span/span[3]/span[14]")).Click();
 
             //biraj opstinu
             PublicVar.WaitUntilElementExists(driver, By.CssSelector("#munContainer > span > span.select-arrow"), 100000);
+            System.Threading.Thread.Sleep(200);
             driver.FindElement(By.CssSelector("#munContainer > span > span.select-arrow")).Click();
             string opst = "niš-" + opstina.ToLower() ;
             bool nastavi = true;
@@ -64,6 +64,7 @@ namespace Nekretninte_Class
             }
             // biraj naselje
             PublicVar.WaitUntilElementExists(driver, By.CssSelector("#hoodContainer > span > span.select-value"), 100000);
+            System.Threading.Thread.Sleep(300);
             driver.FindElement(By.CssSelector("#hoodContainer > span > span.select-value")).Click();
             nastavi = true;
             int granica = 0;
@@ -85,34 +86,52 @@ namespace Nekretninte_Class
             }
             for (int i = 2; i <= granica && nastavi; i++)
             {
-                PublicVar.WaitUntilElementExists(driver, By.CssSelector("body > span > span.drop-down.custom-scroll > span:nth-child("+i+")"), 100000);
-                var opcija = driver.FindElement(By.CssSelector("body > span > span.drop-down.custom-scroll > span:nth-child(" + i + ")"));
+                PublicVar.WaitUntilElementExists(driver, By.XPath("/html/body/span/span[3]/span["+i+"]"), 100000);
+                var opcija = driver.FindElement(By.XPath("/html/body/span/span[3]/span[" + i + "]"));
                 if (opcija.GetAttribute("textContent").ToLower() == deoGrada.ToLower())
                 {
+  
+                    IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+                    js.ExecuteScript("arguments[0].scrollIntoView(true);", opcija);
+                    PublicVar.WaitUntilElementExists(driver, By.XPath("/html/body/span/span[3]/span[" + i + "]"), 100000);
+                    driver.FindElement(By.CssSelector("#hoodContainer > span > span.select-value")).Click();
                     opcija.Click();
                     nastavi = false;
                 }
             }
 
             //biraj svrhu
-            
-            if (tip == "Poslovni prostor")
+            if (tip == "Plac")
             {
-                driver.FindElement(By.Id("office_category")).Click();
+                PublicVar.WaitUntilElementExists(driver, By.CssSelector("#editListingCategory > div > div.ten-columns.nine-columns-tablet.twelve-columns-mobile > div > span:nth-child(3) > label"), 1000);
+                driver.FindElement(By.CssSelector("#editListingCategory > div > div.ten-columns.nine-columns-tablet.twelve-columns-mobile > div > span:nth-child(3) > label")).Click();
+                var span = driver.FindElement(By.CssSelector("#propertyTypeContainer > span > span.select-value"));
+                PublicVar.WaitUntilElementExists(driver, By.CssSelector("#propertyTypeContainer > span > span.select-arrow"), 10);
+                PublicVar.ScrollUntilVisible(driver, span, true);
+                driver.FindElement(By.CssSelector("#propertyTypeContainer > span > span.select-value")).Click() ;
+                driver.FindElement(By.CssSelector("body > span > span.drop-down.custom-scroll > span:nth-child(2)")).Click(); ;
+            }
+            else if (tip == "Poslovni prostor")
+            {
+                PublicVar.WaitUntilElementExists(driver, By.CssSelector("#office_category"), 1000);
+                driver.FindElement(By.CssSelector("#office_category")).Click();
             }
             else if (tip =="Garaza")
             {
-                driver.FindElement(By.Id("rest_category")).Click();
+                PublicVar.WaitUntilElementExists(driver, By.CssSelector("rest_category"), 1000);
+                driver.FindElement(By.CssSelector("rest_category")).Click();
             }
             else
             {
                 if (tip == "Kuca")
                 {
+                    PublicVar.WaitUntilElementExists(driver, By.CssSelector("# propertyTypeContainer > span > span.select-value"), 1000);
+                    PublicVar.ScrollUntilVisible(driver, driver.FindElement(By.CssSelector("# propertyTypeContainer > span > span.select-value")),false);
                     driver.FindElement(By.CssSelector("# propertyTypeContainer > span > span.select-value")).Click();
-                    driver.FindElement(By.CssSelector("body > span > span.drop - down.custom - scroll > span:nth - child(4)")).Click();
+                    PublicVar.WaitUntilElementExists(driver, By.CssSelector("body > span > span.drop - down.custom - scroll > span:nth - child(4)"), 1000);
+                    driver.FindElement(By.CssSelector("body > span > span.drop-down.custom-scroll > span:nth-child(4)")).Click();
 
                 }
-                else driver.FindElement(By.Id("house_category")).Click();
               
             }
 
