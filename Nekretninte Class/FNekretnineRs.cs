@@ -38,6 +38,12 @@ namespace Nekretninte_Class
             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='3000']")));
 
             if (izdavanje) driver.FindElement(By.XPath("//*[@id='3000']")).Click();
+            IWebElement cookieCloser = null;
+            try
+            {
+                cookieCloser = driver.FindElement(By.XPath("//*[@id='billboardgyxnlhsmlflqvspmseioqfrt']/div/div[2]"));
+            } catch { }
+            if (cookieCloser != null) cookieCloser.Click();
             SelectElement selection = new SelectElement(driver.FindElement(By.XPath("//*[@id='mainCategory']"))); 
             switch (sTipObjekta)
             {
@@ -102,7 +108,15 @@ namespace Nekretninte_Class
                 case "Etazno": selection.SelectByText("Etažno grejanje / grejno telo"); break;
                 default: selection.SelectByText("Daljinsko grejanje"); break;
             }
-            driver.FindElement(By.XPath("//*[@id='advertTerms']/div/div[2]/input")).Click();
-        }              
+            driver.FindElement(By.XPath("//*[@id='advertTerms']/div/div[2]/input")).Click();            
+        }
+        public void UploadPhotos(IWebDriver driver,string photo)
+        {
+            driver.FindElement(By.XPath("//*[@id='advertInfoForm']/div[5]/a[2]")).Click();
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='uploadifive - imageUpload']/input]")));
+
+            driver.FindElement(By.XPath("//*[@id='uploadifive - imageUpload']/input]")).SendKeys(photo);
+        }
     }
 }
