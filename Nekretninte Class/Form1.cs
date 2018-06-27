@@ -54,8 +54,8 @@ namespace Nekretninte_Class
 
 
             Login Indomio = new Login();
-            Indomio.Setup(PublicVar.driver5, "https://crm.indomio.com/sr/login");
-            Indomio.Procced(PublicVar.driver5, "dmilosevic252@gmail.com", "daca2012", "//*[@id='fieldEmail']", "//*[@id='fieldPassword']", "//*[@id='form-login']/button");
+            Indomio.Setup(PublicVar.driver, "https://crm.indomio.com/sr/login");
+            Indomio.Procced(PublicVar.driver, "dmilosevic252@gmail.com", "daca2012", "//*[@id='fieldEmail']", "//*[@id='fieldPassword']", "//*[@id='form-login']/button");
 
             //Login SrbijaNekretnine = new Login();
             //SrbijaNekretnine.Setup(PublicVar.driver, "https://srbija-nekretnine.org/agencija/registracija?oglas=1");

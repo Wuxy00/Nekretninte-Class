@@ -30,7 +30,7 @@ namespace Nekretninte_Class
         {
             //TODOOOOOO bug 4zida.rs login drugaciji od drugih // NeMenjaNISSTA!!!!!!!!!!!!!! u ovom BUTTON-u!!!!!!! // ZASTO DA NE MENJEMA PEDERUUUU //Zato sto nista ne valja i treba se promeni ali nemo ti jer sam taj button ja pravio
             SelectFromStructureGroup1 startSelection = new SelectFromStructureGroup1(); // Select type of selling place
-            startSelection.Setup(PublicVar.driver5);
+            startSelection.Setup(PublicVar.driver);
             PlaceCategory FirstQA = new PlaceCategory();
             button2.Enabled = true;
         }
@@ -63,7 +63,7 @@ namespace Nekretninte_Class
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
             FIndomio fi = new FIndomio();
-            fi.Procede(PublicVar.driver5, cbOpstina.Text,cbOkrug.Text, cbKat.Text, "centralno", true, "2007", "dobro", 0235353, "5");
+            fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, true, tbGodiste.Text, "dobro", tbCena.Text, "5");
 //
             //EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text, 
             //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
