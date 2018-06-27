@@ -40,7 +40,7 @@ namespace Nekretninte_Class
             //CetriZida cetriZida = new CetriZida();
             //cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, cbOkrug.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, 
             //    tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, 
-                /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text, rbProdavanje.Checked);*/
+            /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text, rbProdavanje.Checked);*/
             //cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex, cbGrejanje.SelectedIndex);
             //FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
             //EnterAllSrbiaNek.Procede(PublicVar.driver, tbNaslov.Text, tbArea.Text/*, tbAdresa.Text, tbBroj.Text*/, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text,cbGrejanje.Text, cbBrSoba.Text);
@@ -55,8 +55,19 @@ namespace Nekretninte_Class
 
             //FNekretnine365 startSeven = new FNekretnine365();
             //startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
-            //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
+            FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
 
+            EnterNekretnineRs.Setup(PublicVar.driver);
+            EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text,
+               tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
+               , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
+               , cbStanje.Text);
+            EnterNekretnineRs.UploadPhotos(PublicVar.driver, @"c:\Users\User\Downloads\maxresdefault.jpg");
+            //FIndomio fi = new FIndomio();
+            //fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, "centralno", true, "2007", "dobro", 0235353, "5");
+            //
+
+<<<<<<< HEAD
             //EnterNekretnineRs.Setup(PublicVar.driver);
 // HEAD
             //EnterNekretnineRs.Proceed(PublicVar.driver,rbIzdavanje.Checked, cbOkrug.Text);
@@ -69,10 +80,12 @@ namespace Nekretninte_Class
             //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
             //    ,tbBrojTerasa.Text, tbDvoriste.Text,tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked,chPodrum.Checked,tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //    ,cbStanje.Text);
+=======
+>>>>>>> e09b1c9d27c52f0e7dfcd901150ddf0862b436ee
 
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
-//fb96dbc32e0f9fb511bc401ab35b8a2c85f19264
+            //fb96dbc32e0f9fb511bc401ab35b8a2c85f19264
 
         }
 
@@ -193,6 +206,12 @@ namespace Nekretninte_Class
         //UploadPics PicOnSite = new UploadPics();
         private void button3_Click(object sender, EventArgs e)
         {
+            //OpenFileDialog opf = new OpenFileDialog();
+            //opf.Title = "Izaberite fotografije";
+            //if(opf.ShowDialog() == DialogResult.OK)
+            //{
+                
+            //}
             //PicOnSite.Submit(PublicVar.driver);
         }
 

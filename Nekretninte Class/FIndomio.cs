@@ -16,10 +16,6 @@
  *****************************************************************************/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -30,8 +26,17 @@ namespace Nekretninte_Class
         public void Procede(IWebDriver driver,string opstina,string deoGrada, string tip, string grejanje,bool garaza,string godina,string stanje,string cena,string sprat)
         {
 
+<<<<<<< HEAD
 
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+=======
+            //***************************************************************
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='3000']")));
+            //***************************************************************
+
+
+>>>>>>> e09b1c9d27c52f0e7dfcd901150ddf0862b436ee
             driver.Url = "https://crm.indomio.com/sr/editListing/create";
 
 
