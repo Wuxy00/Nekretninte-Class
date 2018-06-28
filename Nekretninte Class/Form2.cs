@@ -55,33 +55,34 @@ namespace Nekretninte_Class
 
             //FNekretnine365 startSeven = new FNekretnine365();
             //startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
-            FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
+            //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
 
-            EnterNekretnineRs.Setup(PublicVar.driver);
-            EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text,
-               tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
-               , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
-               , cbStanje.Text);
-            EnterNekretnineRs.UploadPhotos(PublicVar.driver, @"c:\Users\User\Downloads\maxresdefault.jpg");
+            //EnterNekretnineRs.Setup(PublicVar.driver);
+            //EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text,
+            //   tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
+            //   , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
+            //   , cbStanje.Text);
+            //EnterNekretnineRs.UploadPhotos(PublicVar.driver, @"c:\Users\User\Downloads\maxresdefault.jpg");
             //FIndomio fi = new FIndomio();
             //fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, "centralno", true, "2007", "dobro", 0235353, "5");
             //
 
-<<<<<<< HEAD
+
             //EnterNekretnineRs.Setup(PublicVar.driver);
-// HEAD
+
             //EnterNekretnineRs.Proceed(PublicVar.driver,rbIzdavanje.Checked, cbOkrug.Text);
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
+            bool garaza = false;
             FIndomio fi = new FIndomio();
-            fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, true, tbGodiste.Text, "dobro", tbCena.Text, "5");
-//
+            if (int.Parse(tbParking.Text) > 0 || int.Parse(tbGaraza.Text) > 0) garaza = true;
+            fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, garaza, tbGodiste.Text, cbStanje.Text, tbCena.Text, cbSprat.Text,tbKvad.Text,rbIzdavanje.Checked,rtbOpis.Text,tbBrKup.Text,tbToal.Text,tbBrLift.Text,cbUknjizeno.Text,cbGrupa.Text,cbBrSoba.Text,chDupleks.Checked,chOstava.Checked);
+
             //EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text, 
             //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
             //    ,tbBrojTerasa.Text, tbDvoriste.Text,tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked,chPodrum.Checked,tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //    ,cbStanje.Text);
-=======
->>>>>>> e09b1c9d27c52f0e7dfcd901150ddf0862b436ee
+
 
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
