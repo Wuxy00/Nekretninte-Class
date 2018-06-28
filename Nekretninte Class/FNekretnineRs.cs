@@ -110,13 +110,14 @@ namespace Nekretninte_Class
             }
             driver.FindElement(By.XPath("//*[@id='advertTerms']/div/div[2]/input")).Click();            
         }
-        public void UploadPhotos(IWebDriver driver,string photo)
+        public void UploadPhotos(IWebDriver driver,string[] photos)
         {
             driver.FindElement(By.XPath("//*[@id='advertInfoForm']/div[5]/a[2]")).Click();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='uploadifive - imageUpload']/input]")));
-
-            driver.FindElement(By.XPath("//*[@id='uploadifive - imageUpload']/input]")).SendKeys(photo);
+            IJavaScriptExecutor jse = (IJavaScriptExecutor)driver;
+            jse.ExecuteScript("window.scrollBy(-250,0);", "");
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='uploadifive - imageUpload']")));
+            driver.FindElement(By.XPath("//*[@id='uploadifive - imageUpload']/input]")).SendKeys(photos[0]);
         }
     }
 }
