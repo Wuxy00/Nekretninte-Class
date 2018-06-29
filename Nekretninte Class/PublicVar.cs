@@ -33,26 +33,24 @@ namespace Nekretninte_Class
         //public static IWebDriver driver5 = new ChromeDriver(); // indomio
         //public static IWebDriver driver6 = new ChromeDriver(); // Nekretnine365
         //public static IWebDriver driver7 = new ChromeDriver(); // Nekretnine.rs
-
-        public static IWebElement WaitUntilElementExists(IWebDriver driverZ, By elementLocator, int timeout) //Wait until the element is found.
-        {
-            try
-            {
-                var wait = new WebDriverWait(driverZ, TimeSpan.FromSeconds(timeout));
-                //return wait.Until(ExpectedConditions.ElementExists(elementLocator));//BUGFIX
-                return null;
-            }
-            catch (NoSuchElementException)
-            {
-                Console.WriteLine("Element with locator: '" + elementLocator + "' was not found in current context page.");
-                throw;
-            }
-        }
-        public static void ScrollUntilVisible(IWebDriver driverZ,IWebElement NonVisibleElement,bool centriran)
+        
+        public static void ScrollUntilVisible(IWebDriver driverZ,IWebElement NonVisibleElement,bool centriran) 
         {
             IJavaScriptExecutor js = (IJavaScriptExecutor)driverZ;
             if(centriran)js.ExecuteScript("arguments[0].scrollIntoView(true);", NonVisibleElement);
             else js.ExecuteScript("arguments[0].scrollIntoView(false);", NonVisibleElement);
+        }
+        public static void UploadPhotos(IWebDriver driverZ, By input, string[] photos) // Samo radi na tipove "input"
+        {
+            IWebElement dugme = driver.FindElement(input);
+            int x = photos.Length;
+            for(int i = 0;i<x;++i) dugme.SendKeys(photos[i]);
+        }
+        public static void UploadPhotos(IWebDriver driverZ, int input, string[] photos) //Kad trazi sa tagom input i broj njegov
+        {
+            IWebElement dugme = driver.FindElements(By.TagName("input"))[input];
+            int x = photos.Length;
+            for (int i = 0; i < x; ++i) dugme.SendKeys(photos[i]);
         }
     }
 }

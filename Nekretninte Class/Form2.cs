@@ -63,8 +63,9 @@ namespace Nekretninte_Class
                 tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
                 , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
                 , cbStanje.Text);
-            if(fotoPath!=null) EnterNekretnineRs.UploadPhotos(PublicVar.driver, fotoPath);
-            
+            /*if(fotoPath!=null)*/
+            EnterNekretnineRs.UploadPhotos(PublicVar.driver, fotoPath);
+
             //FIndomio fi = new FIndomio();
             //if (int.Parse(tbParking.Text) > 0 || int.Parse(tbGaraza.Text) > 0) garaza = true;
             //fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, garaza, tbGodiste.Text, cbStanje.Text, tbCena.Text, cbSprat.Text,tbKvad.Text,rbIzdavanje.Checked,rtbOpis.Text,tbBrKup.Text,tbToal.Text,tbBrLift.Text,cbUknjizeno.Text,cbGrupa.Text,cbBrSoba.Text,chDupleks.Checked,chOstava.Checked);

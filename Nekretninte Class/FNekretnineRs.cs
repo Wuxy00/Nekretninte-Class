@@ -41,8 +41,9 @@ namespace Nekretninte_Class
             IWebElement cookieCloser = null;
             try
             {
-                cookieCloser = driver.FindElement(By.XPath("//*[@id='billboardgyxnlhsmlflqvspmseioqfrt']/div/div[2]"));
-            } catch { }
+                cookieCloser = driver.FindElement(By.XPath("//*[@id='billboardgyxnlhsmlflqvspmseioqfrt']/div/div[2]"));                
+            }
+            catch { }
             if (cookieCloser != null) cookieCloser.Click();
             SelectElement selection = new SelectElement(driver.FindElement(By.XPath("//*[@id='mainCategory']"))); 
             switch (sTipObjekta)
@@ -113,11 +114,9 @@ namespace Nekretninte_Class
         public void UploadPhotos(IWebDriver driver,string[] photos)
         {
             driver.FindElement(By.XPath("//*[@id='advertInfoForm']/div[5]/a[2]")).Click();
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-            IJavaScriptExecutor jse = (IJavaScriptExecutor)driver;
-            jse.ExecuteScript("window.scrollBy(-250,0);", "");
-            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='uploadifive - imageUpload']")));
-            driver.FindElement(By.XPath("//*[@id='uploadifive - imageUpload']/input]")).SendKeys(photos[0]);
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));            
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='ui-tabs-2']")));
+            PublicVar.UploadPhotos(driver, 57, photos);            
         }
     }
 }
