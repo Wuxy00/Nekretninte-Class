@@ -62,7 +62,7 @@ namespace Nekretninte_Class
             //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
             //EnterNekretnineRs.Setup(PublicVar.driver);
             //EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text,
-<<<<<<< HEAD
+
             //   tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
             //   , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //   , cbStanje.Text);
@@ -84,17 +84,15 @@ namespace Nekretninte_Class
             //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
             //    ,tbBrojTerasa.Text, tbDvoriste.Text,tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked,chPodrum.Checked,tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //    ,cbStanje.Text);
-=======
+
             //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
             //    , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //    , cbStanje.Text);
             ///*if(fotoPath!=null)*/
             //EnterNekretnineRs.UploadPhotos(PublicVar.driver, fotoPath);
->>>>>>> 3aa7200553121b407e88be030b6339f427049229
 
-            //FIndomio fi = new FIndomio();
-            //if (int.Parse(tbParking.Text) > 0 || int.Parse(tbGaraza.Text) > 0) garaza = true;
-            //fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, garaza, tbGodiste.Text, cbStanje.Text, tbCena.Text, cbSprat.Text,tbKvad.Text,rbIzdavanje.Checked,rtbOpis.Text,tbBrKup.Text,tbToal.Text,tbBrLift.Text,cbUknjizeno.Text,cbGrupa.Text,cbBrSoba.Text,chDupleks.Checked,chOstava.Checked);
+
+            
 
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
