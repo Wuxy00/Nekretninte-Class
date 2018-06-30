@@ -63,9 +63,7 @@ namespace Nekretninte_Class
             //   , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //   , cbStanje.Text);
             //EnterNekretnineRs.UploadPhotos(PublicVar.driver, @"c:\Users\User\Downloads\maxresdefault.jpg");
-            //FIndomio fi = new FIndomio();
-            //fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, "centralno", true, "2007", "dobro", 0235353, "5");
-            //
+            
 
 
             //EnterNekretnineRs.Setup(PublicVar.driver);
