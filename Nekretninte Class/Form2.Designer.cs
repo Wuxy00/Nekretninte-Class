@@ -60,7 +60,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.tbDvoriste = new System.Windows.Forms.TextBox();
             this.rtbOpis = new System.Windows.Forms.RichTextBox();
-            this.PhotoSelectDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ofdPictures = new System.Windows.Forms.OpenFileDialog();
             this.button3 = new System.Windows.Forms.Button();
             this.cbBrSoba = new System.Windows.Forms.ComboBox();
             this.cbGrejanje = new System.Windows.Forms.ComboBox();
@@ -368,9 +368,11 @@
             this.rtbOpis.TabIndex = 44;
             this.rtbOpis.Text = "";
             // 
-            // PhotoSelectDialog
+            // ofdPictures
             // 
-            this.PhotoSelectDialog.FileName = "PhotoSelectDialog";
+            this.ofdPictures.FileName = "PhotoSelectDialog";
+            this.ofdPictures.Multiselect = true;
+            this.ofdPictures.Title = "Pronadjite fotografije";
             // 
             // button3
             // 
@@ -410,9 +412,9 @@
             "Etazno",
             "Struja",
             "Gas",
-            "Kraljeva Pec",
+            "Kraljeva Peć",
             "TA",
-            "Norveski radio",
+            "Norveški radiator",
             "Podno"});
             this.cbGrejanje.Location = new System.Drawing.Point(12, 168);
             this.cbGrejanje.Name = "cbGrejanje";
@@ -548,7 +550,7 @@
             // 
             this.cbSprat.FormattingEnabled = true;
             this.cbSprat.Items.AddRange(new object[] {
-            "Nisko Prizemlje",
+            "Suturen (Nisko Prizemlje)",
             "Prizemlje",
             "Visoko Prizemlje",
             "1",
@@ -816,7 +818,6 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -860,7 +861,7 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox tbDvoriste;
         private System.Windows.Forms.RichTextBox rtbOpis;
-        private System.Windows.Forms.OpenFileDialog PhotoSelectDialog;
+        private System.Windows.Forms.OpenFileDialog ofdPictures;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox cbBrSoba;
         private System.Windows.Forms.ComboBox cbGrejanje;

@@ -53,14 +53,9 @@ namespace Nekretninte_Class
             //MojTrg.Procced(PublicVar.driver, "kodeksimovina@open.telekom.rs", "1DvaTri4", "//*[@id='Email']", "//*[@id='Password']", "/html/body/section/div[1]/div/div[1]/div[1]/form/div[2]/div/div[1]/input");
 
 
-
-            Login Indomio = new Login();
-            Indomio.Setup(PublicVar.driver, "https://crm.indomio.com/sr/login");
-            Indomio.Procced(PublicVar.driver, "dmilosevic252@gmail.com", "daca2012", "//*[@id='fieldEmail']", "//*[@id='fieldPassword']", "//*[@id='form-login']/button");
-
             //Login Indomio = new Login();
             //Indomio.Setup(PublicVar.driver, "https://crm.indomio.com/sr/login");
-            //Indomio.Procced(PublicVar.driver, "dmilosevic252@gmail.com", "daca2012", "//*[@id='fieldEmail']", "//*[@id='fieldPassword']", "//*[@id='form-login']/button");
+            //Indomio.Procced(PublicVar.driver, "dmilosevic252@gmail.com", "daca2012", "//*[@id='fieldEmail']", "//*[@id='fieldPassword']", "//*[@id='form-login']/button");           
 
 
             //Login SrbijaNekretnine = new Login();
@@ -74,6 +69,10 @@ namespace Nekretninte_Class
             //Login Facebook = new Login();
             //Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
             //Facebook.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='email']", "//*[@id='pass']", "//*[@id='u_0_2']");
+
+            Login HaloOglasi = new Login();
+            HaloOglasi.Setup(PublicVar.driver, "https://www.halooglasi.com/prijava?returnUrl=%2f");
+            HaloOglasi.Procced(PublicVar.driver, "iskrenovic@yahoo.com", "1DvaTri4", "//*[@id='EMailOrUsername']", "//*[@id='Password']", "//*[@id='__AjaxAntiForgeryForm']/div[3]/div[2]/button");
 
             Form2 form2 = new Form2(); // Nextform
             form2.Show();

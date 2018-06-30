@@ -21,6 +21,7 @@ namespace Nekretninte_Class
 {
     public partial class Form2 : Form
     {
+        string[] fotoPath;
         public Form2()
         {
             InitializeComponent();
@@ -38,10 +39,11 @@ namespace Nekretninte_Class
         private void button2_Click(object sender, EventArgs e)
         {
             //CetriZida cetriZida = new CetriZida();
-            //cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, cbOkrug.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, 
-            //    tbBrojLodja.Text, tbBrojTerasa.Text, tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text, 
-            /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text, rbProdavanje.Checked);*/
+            //cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, cbOkrug.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text,
+            //    tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text,rtbOpis.Text, rbProdavanje.Checked);
+            ///*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text, */
             //cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex, cbGrejanje.SelectedIndex);
+
             //FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
             //EnterAllSrbiaNek.Procede(PublicVar.driver, tbNaslov.Text, tbArea.Text/*, tbAdresa.Text, tbBroj.Text*/, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text,cbGrejanje.Text, cbBrSoba.Text);
             //UploadPics relatica = new UploadPics();
@@ -54,11 +56,13 @@ namespace Nekretninte_Class
             //relatica.Submit(PublicVar.driver, "//*[@id='content_holder']/table[1]/tbody/tr[2]/td[2]/form/input[4]", "https://www.realitica.com/?action=edit_listing_images_get&edit=1593176&lng=hr");
 
             //FNekretnine365 startSeven = new FNekretnine365();
-            //startSeven.Procede(PublicVar.driver6, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text, chS.Checked, chJ.Checked, chI.Checked, chZ.Checked, chJZ.Checked, chSZ.Checked, chSI.Checked, chJI.Checked, tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
-            //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
+            //startSeven.Procede(PublicVar.driver, cbKat.Text, tbNaslov.Text, tbKvad.Text, cbSprat.Text, cbBrSoba.Text, tbBrKup.Text, tbCena.Text,
+            //    tbGodiste.Text, cbOpstina.Text, tbBrLift.Text, tbGaraza.Text, cbGrejanje.Text, tbParking.Text, rtbOpis.Text);
 
+            //FNekretnineRs EnterNekretnineRs = new FNekretnineRs();
             //EnterNekretnineRs.Setup(PublicVar.driver);
             //EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text,
+<<<<<<< HEAD
             //   tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
             //   , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //   , cbStanje.Text);
@@ -80,12 +84,27 @@ namespace Nekretninte_Class
             //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
             //    ,tbBrojTerasa.Text, tbDvoriste.Text,tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked,chPodrum.Checked,tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //    ,cbStanje.Text);
+=======
+            //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text, tbPrikTel.Text, tbGodiste.Text
+            //    , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
+            //    , cbStanje.Text);
+            ///*if(fotoPath!=null)*/
+            //EnterNekretnineRs.UploadPhotos(PublicVar.driver, fotoPath);
+>>>>>>> 3aa7200553121b407e88be030b6339f427049229
 
+            //FIndomio fi = new FIndomio();
+            //if (int.Parse(tbParking.Text) > 0 || int.Parse(tbGaraza.Text) > 0) garaza = true;
+            //fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, garaza, tbGodiste.Text, cbStanje.Text, tbCena.Text, cbSprat.Text,tbKvad.Text,rbIzdavanje.Checked,rtbOpis.Text,tbBrKup.Text,tbToal.Text,tbBrLift.Text,cbUknjizeno.Text,cbGrupa.Text,cbBrSoba.Text,chDupleks.Checked,chOstava.Checked);
 
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
             //fb96dbc32e0f9fb511bc401ab35b8a2c85f19264
 
+            FHaloOglasi haloOglasi = new FHaloOglasi();
+            haloOglasi.Proceed(PublicVar.driver, cbPurpose.Text, rbProdavanje.Checked, cbKat.Text, tbNaslov.Text, tbCena.Text, tbKvad.Text, cbBrSoba.Text,
+                cbStanje.Text, cbGrejanje.Text, cbSprat.Text, cbUknjizeno.Text == "Jeste" || cbUknjizeno.Text == "Delimicno", chDupleks.Checked, tbBrLift != null, tbBrojTerasa != null, chPodrum.Checked,
+                tbGaraza.Text != null, tbBrojLodja != null, tbBrInterfon != null, tbParking != null, tbPrikTel != null, rtbOpis.Text);
+            haloOglasi.UploadPhotos(PublicVar.driver, fotoPath);
         }
 
 
@@ -205,6 +224,11 @@ namespace Nekretninte_Class
         //UploadPics PicOnSite = new UploadPics();
         private void button3_Click(object sender, EventArgs e)
         {
+
+            if (ofdPictures.ShowDialog() == DialogResult.OK)
+            {
+                fotoPath = ofdPictures.FileNames;
+            }            
             //OpenFileDialog opf = new OpenFileDialog();
             //opf.Title = "Izaberite fotografije";
             //if(opf.ShowDialog() == DialogResult.OK)
@@ -212,11 +236,6 @@ namespace Nekretninte_Class
                 
             //}
             //PicOnSite.Submit(PublicVar.driver);
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
+        }        
     }
 }
