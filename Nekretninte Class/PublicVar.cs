@@ -17,9 +17,10 @@
  *
  *****************************************************************************/
 using System;
+using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
+using AutoItX3Lib;
 
 namespace Nekretninte_Class
 {
@@ -51,6 +52,15 @@ namespace Nekretninte_Class
             IWebElement dugme = driver.FindElements(By.TagName("input"))[input];
             int x = photos.Length;
             for (int i = 0; i < x; ++i) dugme.SendKeys(photos[i]);
+        }
+        public static void UploadPhotos(IWebDriver driverZ,string photo) //Upload na button
+        {
+            AutoItX3 autoIt = new AutoItX3();
+            autoIt.WinActivate("Open");
+
+            autoIt.Send(photo);
+            Thread.Sleep(1000);
+            autoIt.Send("{ENTER}");
         }
     }
 }

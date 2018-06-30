@@ -110,3 +110,5 @@ C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\D
 C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete
 C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.exe
 C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.pdb
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Interop.AutoItX3Lib.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.ResolveComReference.cache

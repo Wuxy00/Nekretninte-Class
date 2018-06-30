@@ -44,26 +44,6 @@ namespace Nekretninte_Class
             driver.FindElement(By.Id("parkingSpace")).SendKeys(parkingSpace);
             driver.FindElement(By.Id("garage")).SendKeys(garage);
             driver.FindElement(By.Id("desc")).SendKeys(desc);
-
-            //int brojKlika = 0;
-            //switch (DeoGrada)
-            //{
-            //    case "Pantelej": brojKlika = 4; break;
-            //    case "Medijana": brojKlika = 1; break;
-            //    case "Niška Banja": brojKlika = 2; break;
-            //    case "Palilula": brojKlika = 3; break;
-            //    case "Crveni krst": brojKlika = 5; break;
-            //    default: brojKlika = 0; break;
-            //}            
-            //driver.FindElement(By.XPath("//*[@id='placeId']")).SendKeys("Nis");
-            //wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='location - view']/div/div[1]/div[2]")));
-            //Actions actions = new Actions(driver);
-            //for (int i = 0; i < brojKlika; ++i)
-            //{
-            //    actions.SendKeys(Keys.ArrowDown);
-            //}
-            //actions.SendKeys(Keys.Enter);
-
         }
         public void ProceedMultipleChoice(IWebDriver driver, int indexGroup, int indexPurpous, int indexStructure, int indexUknjizeno, int indexState, int indexSprat, int indexGrejanje)
         {
@@ -87,6 +67,27 @@ namespace Nekretninte_Class
             div.FindElement(By.Id(buttonName)).Click();
             IWebElement meni = div.FindElement(By .TagName("ul"));
             meni.FindElements(By.TagName("a"))[index + 1].Click();
+        }
+        private void LocationBypass()
+        {
+            //int brojKlika = 0;
+            //switch (DeoGrada)
+            //{
+            //    case "Pantelej": brojKlika = 4; break;
+            //    case "Medijana": brojKlika = 1; break;
+            //    case "Niška Banja": brojKlika = 2; break;
+            //    case "Palilula": brojKlika = 3; break;
+            //    case "Crveni krst": brojKlika = 5; break;
+            //    default: brojKlika = 0; break;
+            //}            
+            //driver.FindElement(By.XPath("//*[@id='placeId']")).SendKeys("Nis");
+            //wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='location - view']/div/div[1]/div[2]")));
+            //Actions actions = new Actions(driver);
+            //for (int i = 0; i < brojKlika; ++i)
+            //{
+            //    actions.SendKeys(Keys.ArrowDown);
+            //}
+            //actions.SendKeys(Keys.Enter);
         }
     }
 }
