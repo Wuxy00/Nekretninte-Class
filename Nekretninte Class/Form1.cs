@@ -30,10 +30,10 @@ namespace Nekretninte_Class
         {
             //Start program by loging in 4zida.rs
 
-            Login CetriZida = new Login();
-            CetriZida.Setup(PublicVar.driver, "https://www.4zida.rs/login");
-            var wait = new WebDriverWait(PublicVar.driver, TimeSpan.FromSeconds(5));
-            CetriZida.ProccedID(PublicVar.driver, "kodeksimovina@mts.rs", "12345678", "//*[@id='username']", "//*[@id='password']", "end-buttons");//BUGFIX LOGIN
+            //Login CetriZida = new Login();
+            //CetriZida.Setup(PublicVar.driver, "https://www.4zida.rs/login");
+            //var wait = new WebDriverWait(PublicVar.driver, TimeSpan.FromSeconds(5));
+            //CetriZida.ProccedID(PublicVar.driver, "kodeksimovina@mts.rs", "12345678", "//*[@id='username']", "//*[@id='password']", "end-buttons");//BUGFIX LOGIN
 
             //Login Relatica = new Login();
             //Relatica.Setup(PublicVar.driver, "https://www.realitica.com/index.php?action=member_login&lng=hr");
@@ -69,6 +69,10 @@ namespace Nekretninte_Class
             //Login Facebook = new Login();
             //Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
             //Facebook.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='email']", "//*[@id='pass']", "//*[@id='u_0_2']");
+
+            Login HaloOglasi = new Login();
+            HaloOglasi.Setup(PublicVar.driver, "https://www.halooglasi.com/prijava?returnUrl=%2f");
+            HaloOglasi.Procced(PublicVar.driver, "iskrenovic@yahoo.com", "1DvaTri4", "//*[@id='EMailOrUsername']", "//*[@id='Password']", "//*[@id='__AjaxAntiForgeryForm']/div[3]/div[2]/button");
 
             Form2 form2 = new Form2(); // Nextform
             form2.Show();

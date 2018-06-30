@@ -38,11 +38,11 @@ namespace Nekretninte_Class
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CetriZida cetriZida = new CetriZida();
-            cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, cbOkrug.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text,
-                tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text,rtbOpis.Text, rbProdavanje.Checked);
-            /*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text, */
-            cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex, cbGrejanje.SelectedIndex);
+            //CetriZida cetriZida = new CetriZida();
+            //cetriZida.Proceed(PublicVar.driver, tbCena.Text, tbKvad.Text, cbOkrug.Text, /*tbAdresa.Text, tbBroj.Text,*/ tbGodiste.Text, tbBrojLodja.Text, tbBrojTerasa.Text,
+            //    tbPrikTel.Text, tbBrInterfon.Text, tbBrLift.Text, tbBrKup.Text, tbToal.Text, tbParking.Text, tbGaraza.Text,rtbOpis.Text, rbProdavanje.Checked);
+            ///*tbAutobus.Text, tbTramvaj.Text, tbTrolejbus.Text, rtbOpis.Text, */
+            //cetriZida.ProceedMultipleChoice(PublicVar.driver, cbGrupa.SelectedIndex, cbPurpose.SelectedIndex, cbBrSoba.SelectedIndex, cbUknjizeno.SelectedIndex, cbStanje.SelectedIndex, cbSprat.SelectedIndex, cbGrejanje.SelectedIndex);
 
             //FSrbijaNekretnineOglas EnterAllSrbiaNek = new FSrbijaNekretnineOglas();
             //EnterAllSrbiaNek.Procede(PublicVar.driver, tbNaslov.Text, tbArea.Text/*, tbAdresa.Text, tbBroj.Text*/, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text,cbGrejanje.Text, cbBrSoba.Text);
@@ -75,6 +75,9 @@ namespace Nekretninte_Class
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
             //fb96dbc32e0f9fb511bc401ab35b8a2c85f19264
+
+            FHaloOglasi haloOglasi = new FHaloOglasi();
+            
 
         }
 

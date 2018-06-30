@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FFacebook.cs" />
+    <Compile Include="FHaloOglasi.cs" />
     <Compile Include="FIndomio.cs" />
     <Compile Include="FMojTrg.cs" />
     <Compile Include="FNekretnine365.cs" />
