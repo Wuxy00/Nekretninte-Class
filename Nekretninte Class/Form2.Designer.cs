@@ -412,9 +412,9 @@
             "Etazno",
             "Struja",
             "Gas",
-            "Kraljeva Pec",
+            "Kraljeva Peć",
             "TA",
-            "Norveski radio",
+            "Norveški radiator",
             "Podno"});
             this.cbGrejanje.Location = new System.Drawing.Point(12, 168);
             this.cbGrejanje.Name = "cbGrejanje";
@@ -550,7 +550,7 @@
             // 
             this.cbSprat.FormattingEnabled = true;
             this.cbSprat.Items.AddRange(new object[] {
-            "Nisko Prizemlje",
+            "Suturen (Nisko Prizemlje)",
             "Prizemlje",
             "Visoko Prizemlje",
             "1",

@@ -77,8 +77,10 @@ namespace Nekretninte_Class
             //fb96dbc32e0f9fb511bc401ab35b8a2c85f19264
 
             FHaloOglasi haloOglasi = new FHaloOglasi();
-            
-
+            haloOglasi.Proceed(PublicVar.driver, cbPurpose.Text, rbProdavanje.Checked, cbKat.Text, tbNaslov.Text, tbCena.Text, tbKvad.Text, cbBrSoba.Text,
+                cbStanje.Text, cbGrejanje.Text, cbSprat.Text, cbUknjizeno.Text == "Jeste" || cbUknjizeno.Text == "Delimicno", chDupleks.Checked, tbBrLift != null, tbBrojTerasa != null, chPodrum.Checked,
+                tbGaraza.Text != null, tbBrojLodja != null, tbBrInterfon != null, tbParking != null, tbPrikTel != null, rtbOpis.Text);
+            haloOglasi.UploadPhotos(PublicVar.driver, fotoPath);
         }
 
 

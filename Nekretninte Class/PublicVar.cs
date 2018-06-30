@@ -45,7 +45,11 @@ namespace Nekretninte_Class
         {
             IWebElement dugme = driver.FindElement(input);
             int x = photos.Length;
-            for(int i = 0;i<x;++i) dugme.SendKeys(photos[i]);
+            for (int i = 0; i < x; ++i)
+            {
+                dugme.SendKeys(photos[i]);
+                Thread.Sleep(2000);
+            }
         }
         public static void UploadPhotos(IWebDriver driverZ, int input, string[] photos) //Kad trazi sa tagom input i broj njegov
         {
