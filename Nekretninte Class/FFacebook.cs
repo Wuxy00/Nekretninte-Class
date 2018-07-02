@@ -9,13 +9,13 @@ namespace Nekretninte_Class
 {
     class FFacebook
     {
-        public void Proccede(IWebDriver driver, string Naslov, string DeoGrada, string m2, string Combobox1Prvi, string tbPrice, string desc, string bathroom, string terrace, string year, string Combobox2Sprat, string cbGrejanje, string cbBrSoba)
+        public void Proccede(IWebDriver driver, string Naslov, /*string DeoGrada,*/ string m2, string Combobox1Prvi, string tbPrice, string desc, string bathroom, string terrace, string year, string Combobox2Sprat, string cbGrejanje, string cbBrSoba)
         {
             string s = null;
             s += Naslov;
             s += Environment.NewLine;
-            s += DeoGrada;
-            s += Environment.NewLine;
+            //s += DeoGrada;
+            //s += Environment.NewLine;
             s += m2+"metara kvadratnih";
             s += Environment.NewLine;
             s += Combobox1Prvi;
@@ -35,8 +35,8 @@ namespace Nekretninte_Class
             s += "Broj soba: " + cbBrSoba;
             s += Environment.NewLine;
             s += "Dodatni opis : "+desc;
-            //driver.FindElement(By.XPath("//*[@id='js_1l']/div[1]/div/div[1]/div[2]/div/div/div/div/div/div[2]/div/div/div/div")).SendKeys(s);
-            ////*[@id="js_8u"]/div[1]/div/div[1]/div[2]/div/div/div
+            driver.FindElement(By.CssSelector("#js_12 > div._i-o._2j7c > div > div.clearfix._ikh > div._4bl9 > div > div > div")).SendKeys(s);
+                
         }
     }
 }

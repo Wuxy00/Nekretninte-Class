@@ -67,18 +67,19 @@ namespace Nekretninte_Class
             //   , tbBrojTerasa.Text, tbDvoriste.Text, tbParking.Text, tbGaraza.Text, tbBrojLodja.Text, chOstava.Checked, chPodrum.Checked, tbBrLift.Text, cbGrejanje.Text, chDupleks.Checked
             //   , cbStanje.Text);
             //EnterNekretnineRs.UploadPhotos(PublicVar.driver, @"c:\Users\User\Downloads\maxresdefault.jpg");
-            
+
 
 
             //EnterNekretnineRs.Setup(PublicVar.driver);
-
             //EnterNekretnineRs.Proceed(PublicVar.driver,rbIzdavanje.Checked, cbOkrug.Text);
+
             //FFacebook fillFace = new FFacebook();
-            //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
-            bool garaza = false;
-            FIndomio fi = new FIndomio();
-            if (int.Parse(tbParking.Text) > 0 || int.Parse(tbGaraza.Text) > 0) garaza = true;
-            fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, garaza, tbGodiste.Text, cbStanje.Text, tbCena.Text, cbSprat.Text,tbKvad.Text,rbIzdavanje.Checked,rtbOpis.Text,tbBrKup.Text,tbToal.Text,tbBrLift.Text,cbUknjizeno.Text,cbGrupa.Text,cbBrSoba.Text,chDupleks.Checked,chOstava.Checked);
+            //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
+
+            //bool garaza = false;
+            //FIndomio fi = new FIndomio();
+            //if (int.Parse(tbParking.Text) > 0 || int.Parse(tbGaraza.Text) > 0) garaza = true;
+            //fi.Procede(PublicVar.driver, cbOpstina.Text,cbOkrug.Text, cbKat.Text, cbGrejanje.Text, garaza, tbGodiste.Text, cbStanje.Text, tbCena.Text, cbSprat.Text,tbKvad.Text,rbIzdavanje.Checked,rtbOpis.Text,tbBrKup.Text,tbToal.Text,tbBrLift.Text,cbUknjizeno.Text,cbGrupa.Text,cbBrSoba.Text,chDupleks.Checked,chOstava.Checked);
 
             //EnterNekretnineRs.Proceed(PublicVar.driver, rbIzdavanje.Checked, cbKat.Text, cbOkrug.Text, tbNaslov.Text, rtbOpis.Text, 
             //    tbCena.Text, tbKvad.Text, cbUknjizeno.Text, cbBrSoba.Text, tbBrKup.Text, cbSprat.Text, tbBrInterfon.Text,tbPrikTel.Text, tbGodiste.Text
@@ -92,17 +93,17 @@ namespace Nekretninte_Class
             //EnterNekretnineRs.UploadPhotos(PublicVar.driver, fotoPath);
 
 
-            
+
 
             //FFacebook fillFace = new FFacebook();
             //fillFace.Proccede(PublicVar.driver, tbNaslov.Text, tbArea.Text, tbKvad.Text, cbKat.Text, tbCena.Text, rtbOpis.Text, tbBrKup.Text, tbBrojTerasa.Text, tbGodiste.Text, cbSprat.Text, cbGrejanje.Text, cbBrSoba.Text);
             //fb96dbc32e0f9fb511bc401ab35b8a2c85f19264
 
-            FHaloOglasi haloOglasi = new FHaloOglasi();
-            haloOglasi.Proceed(PublicVar.driver, cbPurpose.Text, rbProdavanje.Checked, cbKat.Text, tbNaslov.Text, tbCena.Text, tbKvad.Text, cbBrSoba.Text,
-                cbStanje.Text, cbGrejanje.Text, cbSprat.Text, cbUknjizeno.Text == "Jeste" || cbUknjizeno.Text == "Delimicno", chDupleks.Checked, tbBrLift != null, tbBrojTerasa != null, chPodrum.Checked,
-                tbGaraza.Text != null, tbBrojLodja != null, tbBrInterfon != null, tbParking != null, tbPrikTel != null, rtbOpis.Text);
-            haloOglasi.UploadPhotos(PublicVar.driver, fotoPath);
+            //FHaloOglasi haloOglasi = new FHaloOglasi();
+            //haloOglasi.Proceed(PublicVar.driver, cbPurpose.Text, rbProdavanje.Checked, cbKat.Text, tbNaslov.Text, tbCena.Text, tbKvad.Text, cbBrSoba.Text,
+            //    cbStanje.Text, cbGrejanje.Text, cbSprat.Text, cbUknjizeno.Text == "Jeste" || cbUknjizeno.Text == "Delimicno", chDupleks.Checked, tbBrLift != null, tbBrojTerasa != null, chPodrum.Checked,
+            //    tbGaraza.Text != null, tbBrojLodja != null, tbBrInterfon != null, tbParking != null, tbPrikTel != null, rtbOpis.Text);
+            //haloOglasi.UploadPhotos(PublicVar.driver, fotoPath);
         }
 
 

@@ -70,9 +70,9 @@ namespace Nekretninte_Class
             //Facebook.Setup(PublicVar.driver, "https://www.facebook.com");
             //Facebook.Procced(PublicVar.driver, textBox1.Text, textBox2.Text, "//*[@id='email']", "//*[@id='pass']", "//*[@id='u_0_2']");
 
-            Login HaloOglasi = new Login();
-            HaloOglasi.Setup(PublicVar.driver, "https://www.halooglasi.com/prijava?returnUrl=%2f");
-            HaloOglasi.Procced(PublicVar.driver, "iskrenovic@yahoo.com", "1DvaTri4", "//*[@id='EMailOrUsername']", "//*[@id='Password']", "//*[@id='__AjaxAntiForgeryForm']/div[3]/div[2]/button");
+            //Login HaloOglasi = new Login();
+            //HaloOglasi.Setup(PublicVar.driver, "https://www.halooglasi.com/prijava?returnUrl=%2f");
+            //HaloOglasi.Procced(PublicVar.driver, "iskrenovic@yahoo.com", "1DvaTri4", "//*[@id='EMailOrUsername']", "//*[@id='Password']", "//*[@id='__AjaxAntiForgeryForm']/div[3]/div[2]/button");
 
             Form2 form2 = new Form2(); // Nextform
             form2.Show();

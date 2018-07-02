@@ -112,3 +112,19 @@ C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\D
 C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.pdb
 C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Interop.AutoItX3Lib.dll
 C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.ResolveComReference.cache
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.ResolveComReference.cache
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form1.resources
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Form2.resources
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte_Class.Properties.Resources.resources
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.GenerateResource.cache
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CoreCompileInputs.cache
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.exe
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.pdb
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\Nekretninte Class.exe.config
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\Nekretninte Class.exe
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\Nekretninte Class.pdb
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.dll
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.Support.dll
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.xml
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.Support.xml
+C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete

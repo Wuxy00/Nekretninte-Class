@@ -31,7 +31,7 @@ namespace Nekretninte_Class
         {
             driver.Url = "https://www.halooglasi.com/postavite-oglas";
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
-            
+
             driver.FindElement(By.XPath("//*[@id='1']/a")).Click();
             if (tip == "Poslovni")
             {
@@ -89,7 +89,7 @@ namespace Nekretninte_Class
                             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='27']/a")));
                             driver.FindElement(By.XPath("//*[@id='27']/a")).Click(); break;
                     }
-                }                
+                }
             }
             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='next']")));
             //PublicVar.ScrollUntilVisible(driver, driver.FindElement(By.XPath("//*[@id='next']")), true);
@@ -113,7 +113,7 @@ namespace Nekretninte_Class
             if (brojSoba == "Garsonjera") select.SelectByValue("398");
             else
             {
-                if (!brojSoba.Contains(".")) brojSoba += ".0";                
+                if (!brojSoba.Contains(".")) brojSoba += ".0";
                 select.SelectByText(brojSoba);
             }
 
@@ -171,7 +171,7 @@ namespace Nekretninte_Class
             if (telefon) driver.FindElement(By.Id("12100010")).Click();
 
             driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[3]/ul/li/div[1]/div[1]/div/div[6]/div/div[2]")).SendKeys(dodatanOpis);
-            
+
         }
         public void UploadPhotos(IWebDriver driver, string[] photos)
         {

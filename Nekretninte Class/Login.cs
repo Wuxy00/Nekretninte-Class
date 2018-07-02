@@ -56,7 +56,7 @@ namespace Nekretninte_Class
         }
         public void ProccedByPassDica(IWebDriver driver)
         {
-            WebDriverWait wait = new WebDriverWait(driver,TimeSpan.FromSeconds(20));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='ajax_login']/div/a")));
             driver.FindElement(By.XPath("//*[@id='ajax_login']/div/a")).Click();
             //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);

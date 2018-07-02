@@ -57,7 +57,7 @@ namespace Nekretninte_Class
             int x = photos.Length;
             for (int i = 0; i < x; ++i) dugme.SendKeys(photos[i]);
         }
-        public static void UploadPhotos(IWebDriver driverZ,string photo) //Upload na button
+        public static void UploadPhotos(IWebDriver driverZ, string photo) //Upload na button
         {
             AutoItX3 autoIt = new AutoItX3();
             autoIt.WinActivate("Open");

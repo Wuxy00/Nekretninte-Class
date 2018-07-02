@@ -23,9 +23,9 @@ namespace Nekretninte_Class
 {
     class CetriZida
     {
-        public void Proceed(IWebDriver driver, string price, string m2, string DeoGrada,string year,string loggia, string terrace, string phone,
-            string intercom, string elevator,string bathroom, string toilet, string parkingSpace, string garage, string desc, bool prodaja) // Price and M2 fill
-        {            
+        public void Proceed(IWebDriver driver, string price, string m2, string DeoGrada, string year, string loggia, string terrace, string phone,
+            string intercom, string elevator, string bathroom, string toilet, string parkingSpace, string garage, string desc, bool prodaja) // Price and M2 fill
+        {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             if (prodaja) driver.Url = "https://www.4zida.rs/novi-oglas/prodaja";
             else driver.Url = "https://www.4zida.rs/novi-oglas/izdavanje";
@@ -65,7 +65,7 @@ namespace Nekretninte_Class
         {
             IWebElement div = driver.FindElement(By.XPath(xPath));
             div.FindElement(By.Id(buttonName)).Click();
-            IWebElement meni = div.FindElement(By .TagName("ul"));
+            IWebElement meni = div.FindElement(By.TagName("ul"));
             meni.FindElements(By.TagName("a"))[index + 1].Click();
         }
         private void LocationBypass()

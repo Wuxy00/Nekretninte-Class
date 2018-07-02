@@ -23,12 +23,12 @@ namespace Nekretninte_Class
 {
     class FIndomio
     {
-        public void Procede(IWebDriver driver, string opstina, string deoGrada, string tip, string grejanje, bool garaza, string godina, string stanje, string cena, string sprat, string povrsina, bool izdavanje, string opis, string brKupatila, string brToaleta, string brojLiftova, string Uknjizen, string PodGrupa,string brojSoba,bool dupleks,bool ostava)
+        public void Procede(IWebDriver driver, string opstina, string deoGrada, string tip, string grejanje, bool garaza, string godina, string stanje, string cena, string sprat, string povrsina, bool izdavanje, string opis, string brKupatila, string brToaleta, string brojLiftova, string Uknjizen, string PodGrupa, string brojSoba, bool dupleks, bool ostava)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
             driver.Url = "https://crm.indomio.com/sr/editListing/create";
 
-            
+
             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='editListingMainContainer']/ul/div[1]/div[1]/span")));
             driver.FindElement(By.XPath("//*[@id='editListingMainContainer']/ul/div[1]/div[1]/span")).Click();
 
@@ -60,7 +60,7 @@ namespace Nekretninte_Class
             bool nastavi = true;
             for (int i = 6; i <= 10 && nastavi; i++)
             {
-                string putanja = "/html/body/span/span[3]/span["+i+"]";
+                string putanja = "/html/body/span/span[3]/span[" + i + "]";
                 wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath(putanja)));
                 var opcija = driver.FindElement(By.XPath(putanja));
                 if (opcija.GetAttribute("textContent").ToLower() == opst)
@@ -127,7 +127,7 @@ namespace Nekretninte_Class
             }
             else
             {
-                
+
                 if (tip == "Kuća")
                 {
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='propertyTypeContainer']/span/span[1]")));
@@ -281,14 +281,14 @@ namespace Nekretninte_Class
                 // Lift?
                 if (int.Parse(brojLiftova) > 0)
                 {
-                   
+
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='sidetab-basic']/div[17]/p[6]/span/span[1]")));
                     driver.FindElement(By.XPath("//*[@id='sidetab-basic']/div[17]/p[6]/span/span[1]")).Click();
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("/html/body/span/span[3]/span[2]")));
                     driver.FindElement(By.XPath("/html/body/span/span[3]/span[2]")).Click();
                 }
                 // da li je penthouse?
-                if (tip!="Garaza")
+                if (tip != "Garaza")
                 {
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='sidetab-basic']/div[17]/p[20]/span/span[1]")));
                     driver.FindElement(By.XPath("//*[@id='sidetab-basic']/div[17]/p[20]/span/span[1]")).Click();
@@ -303,15 +303,15 @@ namespace Nekretninte_Class
                         driver.FindElement(By.XPath("/html/body/span/span[3]/span[3]")).Click();
                     }
                 }
-                
-                if(stanje=="Novo")
+
+                if (stanje == "Novo")
                 {
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='sidetab-basic']/div[17]/p[8]/span/span[1]")));
                     driver.FindElement(By.XPath("//*[@id='sidetab-basic']/div[17]/p[8]/span/span[1]")).Click();
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("/html/body/span/span[3]/span[2]")));
                     driver.FindElement(By.XPath("/html/body/span/span[3]/span[2]")).Click();
                 }
-                if (tip!="Garaza" && stanje == "Renovirano")
+                if (tip != "Garaza" && stanje == "Renovirano")
                 {
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='sidetab-basic']/div[16]/p[18]/span/span[1]")));
                     driver.FindElement(By.XPath("//*[@id='sidetab-basic']/div[16]/p[18]/span/span[1]")).Click();
@@ -332,7 +332,7 @@ namespace Nekretninte_Class
             {
                 wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='sidetab-basic']/div[17]/p[25]/span/span[1]")));
                 driver.FindElement(By.XPath("//*[@id='sidetab-basic']/div[17]/p[25]/span/span[1]")).Click();
-                if (Uknjizen == "Jeste" || Uknjizen=="Delimicno")
+                if (Uknjizen == "Jeste" || Uknjizen == "Delimicno")
                 {
                     wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("/html/body/span/span[3]/span[2]")));
                     driver.FindElement(By.XPath("/html/body/span/span[3]/span[2]")).Click();
@@ -344,7 +344,7 @@ namespace Nekretninte_Class
                 }
             }
 
-            
+
             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='submitButton']/button")));
             PublicVar.ScrollUntilVisible(driver, driver.FindElement(By.XPath("//*[@id='submitButton']/button")), false);
             driver.FindElement(By.XPath("//*[@id='submitButton']/button")).Click();
