@@ -15,19 +15,19 @@
  *
  *****************************************************************************/
 //TOODOO:
-//  1)Lokacija
-//  2)Dodatne informacije
-//  3)Photo upload
+//  1)Dodatne informacije
+//  2)Photo upload
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Interactions;
 namespace Nekretninte_Class
 {
     class FHaloOglasi
     {
         public void Proceed(IWebDriver driver, string tip, bool prodaja, string tipObjekta, string naslov, string cena, string kvadratura, string brojSoba
             , string stanjeObjekta, string grejanje, string sprat, bool uknjizen, bool dupleks, bool lift, bool terasa, bool podrum, bool garaza, bool lodja, bool interfon,
-            bool parking, bool telefon, string dodatanOpis)
+            bool parking, bool telefon, string dodatanOpis, string opstina, int okrugInd)
         {
             driver.Url = "https://www.halooglasi.com/postavite-oglas";
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
@@ -100,12 +100,8 @@ namespace Nekretninte_Class
             driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[3]/div/div/input")).SendKeys(naslov);
 
             driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[4]/div/div/div[2]/input")).SendKeys(cena);
-
-            //TOODOO LOKACIJA
-            //*
-            //*
-            //*
-            //TOODOO LOKACIJA
+            
+            SelectLocation(driver, opstina, okrugInd);           
 
             driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[2]/div/div[2]/div[1]/ul/li[2]/span/div/input")).SendKeys(kvadratura);
 
@@ -114,7 +110,7 @@ namespace Nekretninte_Class
             else
             {
                 if (!brojSoba.Contains(".")) brojSoba += ".0";
-                select.SelectByText(brojSoba);
+                select.SelectByText(brojSoba);  
             }
 
             select = new SelectElement(driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[2]/div/div[2]/div[3]/div/div/div/div[1]/div[2]/div/select")));
@@ -176,6 +172,34 @@ namespace Nekretninte_Class
         public void UploadPhotos(IWebDriver driver, string[] photos)
         {
             PublicVar.UploadPhotos(driver, By.Name("Images_files"), photos);
+        }
+        private void SelectLocation(IWebDriver driver,string opstina, int okrugInd)
+        {
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            //Actions actions = new Actions(driver);
+            //IWebElement nesto = driver.FindElement(By.) 
+            driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[1]/div/input[2]")).Click();
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[1]/div/div[2]/div[1]/ul/li[3]")));
+            driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[1]/div/div[2]/div[1]/ul/li[3]")).Click();
+            
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[2]/div/div[2]/div[1]/ul/li[1]")));
+            switch (opstina)
+            {
+                case "Crveni krst":
+                    driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[2]/div/div[2]/div[1]/ul/li[1]")).Click(); break;
+                case "Medijana":
+                    driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[2]/div/div[2]/div[1]/ul/li[2]")).Click(); break;
+                case "Niška Banja":
+                    driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[2]/div/div[2]/div[1]/ul/li[3]")).Click(); break;
+                case "Palilula":
+                    driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[2]/div/div[2]/div[1]/ul/li[4]")).Click(); break;
+                case "Pantelej":
+                    driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[2]/div/div[2]/div[1]/ul/li[5]")).Click(); break;
+            }            
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[3]/div/div[2]/div[1]/ul/li[1]")));
+            driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[3]/div/div[2]/div[1]/ul/li[" + (okrugInd + 1).ToString() + "]")).Click();
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='mapDisplay']/iframe")));
+            driver.FindElement(By.XPath("//*[@id='mapDisplay']/iframe")).Click();
         }
     }
 }

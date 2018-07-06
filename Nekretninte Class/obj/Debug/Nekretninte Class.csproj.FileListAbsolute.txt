@@ -128,3 +128,5 @@ C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebD
 C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.xml
 C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebDriver.Support.xml
 C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete
+C:\Users\Dimitrije\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.ResolveComReference.cache
+C:\Users\Dimitrije\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Interop.AutoItX3Lib.dll

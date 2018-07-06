@@ -536,6 +536,7 @@
             this.cbOpstina.Name = "cbOpstina";
             this.cbOpstina.Size = new System.Drawing.Size(121, 21);
             this.cbOpstina.TabIndex = 61;
+            this.cbOpstina.SelectedIndexChanged += new System.EventHandler(this.cbOpstina_SelectedIndexChanged);
             // 
             // label28
             // 
@@ -695,53 +696,7 @@
             // 
             this.cbOkrug.FormattingEnabled = true;
             this.cbOkrug.Items.AddRange(new object[] {
-            "9 Maj (Novo naselje)",
-            "Apelovac",
-            "Beograd mala",
-            "Beverli hils",
-            "Branko Bjegović",
-            "Bulevar Nemanjića",
-            "Bulevar zona",
-            "Čair",
-            "Ćalije",
-            "Čamurlija",
-            "Ćele kula",
-            "Centar",
-            "Crvena Zvezda",
-            "Crveni Krst",
-            "Crveni krst (Duvanska)",
-            "Crveni pevac",
-            "Delijski vis",
-            "Durlan",
-            "Duvanište",
-            "Elektronska",
-            "Gabrovačka reka",
-            "Jagodin mala",
-            "Kalač brdo",
-            "Kičevo",
-            "Komren",
-            "Kovanluk",
-            "Krive livade",
-            "Ledena stena",
-            "Marger",
-            "Mediana",
-            "Medijana",
-            "Mika Protić (KP dom)",
-            "Nikola Tesla",
-            "Nova železnička kolonija",
-            "Palilula",
-            "Pantelej",
-            "Pasi poljana",
-            "Popović",
-            "Ratko Jović",
-            "Šljaka",
-            "Staro groblje",
-            "Stočni trg",
-            "Tehnički fakultet",
-            "Trošarina",
-            "Vinik",
-            "Vrežina",
-            "Ženeva (Devizno naselje)"});
+            "--Izaberite opstinu --"});
             this.cbOkrug.Location = new System.Drawing.Point(149, 200);
             this.cbOkrug.Name = "cbOkrug";
             this.cbOkrug.Size = new System.Drawing.Size(103, 21);
