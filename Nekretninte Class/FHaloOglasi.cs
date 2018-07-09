@@ -15,8 +15,7 @@
  *
  *****************************************************************************/
 //TOODOO:
-//  1)Dodatne informacije
-//  2)Photo upload
+//  1)Photo upload
 using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -27,7 +26,7 @@ namespace Nekretninte_Class
     {
         public void Proceed(IWebDriver driver, string tip, bool prodaja, string tipObjekta, string naslov, string cena, string kvadratura, string brojSoba
             , string stanjeObjekta, string grejanje, string sprat, bool uknjizen, bool dupleks, bool lift, bool terasa, bool podrum, bool garaza, bool lodja, bool interfon,
-            bool parking, bool telefon, string dodatanOpis, string opstina, int okrugInd)
+            bool parking, bool telefon, string dodatanOpis, string opstina, int okrugInd, string dodatanTip)
         {
             driver.Url = "https://www.halooglasi.com/postavite-oglas";
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
@@ -143,6 +142,8 @@ namespace Nekretninte_Class
                 case "Centralno (CG)":
                 case "Struja":
                     select.SelectByText("CG"); break;
+                case "Etazno":
+                    select.SelectByText("EG"); break;
                 default:
                     select.SelectByText(grejanje); break;
             }
@@ -165,6 +166,13 @@ namespace Nekretninte_Class
             if (interfon) driver.FindElement(By.Id("12100013")).Click();
             if (parking) driver.FindElement(By.Id("12100017")).Click();
             if (telefon) driver.FindElement(By.Id("12100010")).Click();
+            switch (dodatanTip)
+            {
+                case "Salonac":
+                    driver.FindElement(By.Id("12000012")).Click(); break;
+                case "Penthaus":
+                    driver.FindElement(By.Id("12000014")).Click(); break;
+            }
 
             driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[3]/ul/li/div[1]/div[1]/div/div[6]/div/div[2]")).SendKeys(dodatanOpis);
 

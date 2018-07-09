@@ -21,6 +21,7 @@ using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using AutoItX3Lib;
+using OpenQA.Selenium.Support.UI;
 
 namespace Nekretninte_Class
 {
@@ -44,11 +45,12 @@ namespace Nekretninte_Class
         public static void UploadPhotos(IWebDriver driverZ, By input, string[] photos) // Samo radi na tipove "input"
         {
             IWebElement dugme = driver.FindElement(input);
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             int x = photos.Length;
             for (int i = 0; i < x; ++i)
-            {
+            {                
                 dugme.SendKeys(photos[i]);
-                Thread.Sleep(2000);
+                wait.Until(ExpectedConditions.StalenessOf(dugme));
             }
         }
         public static void UploadPhotos(IWebDriver driverZ, int input, string[] photos) //Kad trazi sa tagom input i broj njegov
