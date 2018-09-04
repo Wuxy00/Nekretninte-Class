@@ -412,7 +412,7 @@
             "Etazno",
             "Struja",
             "Gas",
-            "Kraljeva Peć",
+            "Kaljeva peć",
             "TA",
             "Norveški radiator",
             "Podno"});

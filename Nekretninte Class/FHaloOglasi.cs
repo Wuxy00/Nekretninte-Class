@@ -179,7 +179,8 @@ namespace Nekretninte_Class
         }
         public void UploadPhotos(IWebDriver driver, string[] photos)
         {
-            PublicVar.UploadPhotos(driver, By.Name("Images_files"), photos);
+            //PublicVar.UploadPhotos(driver, By.Name("Images_files"), photos);
+            PublicVar.UploadPhotos(driver, By.XPath("//*[@id='button -for-add']/input"), photos);
         }
         private void SelectLocation(IWebDriver driver,string opstina, int okrugInd)
         {

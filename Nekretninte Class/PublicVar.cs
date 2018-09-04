@@ -48,9 +48,10 @@ namespace Nekretninte_Class
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             int x = photos.Length;
             for (int i = 0; i < x; ++i)
-            {                
+            {
+                wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(input));
                 dugme.SendKeys(photos[i]);
-                wait.Until(ExpectedConditions.StalenessOf(dugme));
+                //wait.Until(ExpectedConditions.StalenessOf(dugme));
             }
         }
         public static void UploadPhotos(IWebDriver driverZ, int input, string[] photos) //Kad trazi sa tagom input i broj njegov
@@ -67,6 +68,6 @@ namespace Nekretninte_Class
             autoIt.Send(photo);
             Thread.Sleep(1000);
             autoIt.Send("{ENTER}");
-        }
+        }        
     }
 }

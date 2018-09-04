@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="facebook\Facebook.cs" />
+    <Compile Include="facebook\FacebookClient.cs" />
     <Compile Include="FFacebook.cs" />
     <Compile Include="FHaloOglasi.cs" />
     <Compile Include="FIndomio.cs" />
