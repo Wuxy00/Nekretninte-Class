@@ -120,6 +120,7 @@ namespace Nekretninte_Class
             driver.FindElement(By.XPath("//*[@id='advertInfoForm']/div[5]/a[2]")).Click();
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='ui-tabs-2']")));
+            
             PublicVar.UploadPhotos(driver, 57, photos);
         }
     }

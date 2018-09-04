@@ -42,24 +42,40 @@ namespace Nekretninte_Class
             if(centriran)js.ExecuteScript("arguments[0].scrollIntoView(true);", NonVisibleElement);
             else js.ExecuteScript("arguments[0].scrollIntoView(false);", NonVisibleElement);
         }
-        public static void UploadPhotos(IWebDriver driverZ, By input, string[] photos) // Samo radi na tipove "input"
+
+        public static void UploadPhotos(IWebDriver driverZ, By by, string[] photos, bool input) // Samo radi na tipove "input"
         {
-            IWebElement dugme = driver.FindElement(input);
+            IWebElement dugme = driver.FindElement(by);
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
             int x = photos.Length;
-            for (int i = 0; i < x; ++i)
+            if (input)
             {
-                wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(input));
-                dugme.SendKeys(photos[i]);
-                //wait.Until(ExpectedConditions.StalenessOf(dugme));
+                for (int i = 0; i < x; ++i)
+                {
+                    wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(by));
+                    dugme.SendKeys(photos[i]);
+                    //wait.Until(ExpectedConditions.StalenessOf(dugme));
+                }
+            }
+            else
+            {
+                for (int i = 0; i < x; i++)
+                {
+                    dugme.Click();
+                    Thread.Sleep(1000);
+                    UploadPhotos(driver, photos[i]); Thread.Sleep(1000);
+                    Thread.Sleep(5000); //Ceka upload
+                }
             }
         }
+
         public static void UploadPhotos(IWebDriver driverZ, int input, string[] photos) //Kad trazi sa tagom input i broj njegov
         {
             IWebElement dugme = driver.FindElements(By.TagName("input"))[input];
             int x = photos.Length;
             for (int i = 0; i < x; ++i) dugme.SendKeys(photos[i]);
         }
+
         public static void UploadPhotos(IWebDriver driverZ, string photo) //Upload na button
         {
             AutoItX3 autoIt = new AutoItX3();
@@ -68,6 +84,6 @@ namespace Nekretninte_Class
             autoIt.Send(photo);
             Thread.Sleep(1000);
             autoIt.Send("{ENTER}");
-        }        
+        }
     }
 }

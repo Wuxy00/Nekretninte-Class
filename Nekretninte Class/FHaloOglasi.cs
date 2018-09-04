@@ -179,8 +179,9 @@ namespace Nekretninte_Class
         }
         public void UploadPhotos(IWebDriver driver, string[] photos)
         {
-            //PublicVar.UploadPhotos(driver, By.Name("Images_files"), photos);
-            PublicVar.UploadPhotos(driver, By.XPath("//*[@id='button -for-add']/input"), photos);
+            //PublicVar.UploadPhotos(driver, By.Name("Images_files"), photos);  
+            
+            PublicVar.UploadPhotos(driver, By.XPath("//*[@id='button-for-add']/input"), photos, UploadButtonType.button);
         }
         private void SelectLocation(IWebDriver driver,string opstina, int okrugInd)
         {
@@ -209,6 +210,6 @@ namespace Nekretninte_Class
             driver.FindElement(By.XPath("//*[@id='tab2']/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[6]/div[2]/div[1]/div/div/div[3]/div/div[2]/div[1]/ul/li[" + (okrugInd + 1).ToString() + "]")).Click();
             wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='mapDisplay']/iframe")));
             driver.FindElement(By.XPath("//*[@id='mapDisplay']/iframe")).Click();
-        }
+        }        
     }
 }

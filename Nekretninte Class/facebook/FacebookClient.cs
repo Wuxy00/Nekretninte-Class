@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.json;
 
 namespace Nekretninte_Class.facebook
 {
     class FacebookClient : IFacebookClient
     {
-        public readonly HttpClient = _httpClient;
+        //public readonly HttpClient = _httpClient;
 
         public Task<T> GetAsync<T>(string accesToken, string endPoint, string args = null)
         {

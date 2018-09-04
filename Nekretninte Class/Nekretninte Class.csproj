@@ -83,6 +83,7 @@
     <Compile Include="FRelatica.cs" />
     <Compile Include="SelectFromStructureGroup1.cs" />
     <Compile Include="FSrbijaNekretnineOglas.cs" />
+    <Compile Include="UploadButtonState.cs" />
     <Compile Include="UploadPics.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
