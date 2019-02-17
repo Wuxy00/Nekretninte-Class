@@ -54,6 +54,16 @@ namespace Nekretninte_Class
             driver.FindElement(By.XPath(XPathP)).SendKeys(textPass);
             driver.FindElement(By.Id(IdB)).Click();
         }
+        public void ProceedClickAndWait(IWebDriver driver, string textUser, string textPass, string startButtonXPath, string usernameXPath, string passwordXPath, string nextXPath)
+        {
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath(startButtonXPath)));
+            driver.FindElement(By.XPath(startButtonXPath)).Click();
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath(usernameXPath)));
+            driver.FindElement(By.XPath(usernameXPath)).SendKeys(textUser);
+            driver.FindElement(By.XPath(passwordXPath)).SendKeys(textPass);
+            driver.FindElement(By.XPath(nextXPath)).Click();
+        }
         public void ProccedByPassDica(IWebDriver driver)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));

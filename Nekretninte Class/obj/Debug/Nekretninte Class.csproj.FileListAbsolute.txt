@@ -130,3 +130,14 @@ C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\bin\Debug\WebD
 C:\Users\Wukasin\source\repos\Nekretninte Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.CopyComplete
 C:\Users\Dimitrije\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Nekretninte Class.csproj.ResolveComReference.cache
 C:\Users\Dimitrije\Documents\GitHub\Nekretninte-Class\Nekretninte Class\obj\Debug\Interop.AutoItX3Lib.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Facebook.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Microsoft.Owin.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Owin.dll
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Facebook.xml
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Microsoft.Owin.xml
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Budala Jedna\Documents\GitHub\Nekretninte-Class\Nekretninte Class\bin\Debug\Newtonsoft.Json.xml

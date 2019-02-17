@@ -9,7 +9,7 @@ using Facebook;
 
 namespace Nekretninte_Class.facebook
 {
-    class Facebook : System.Web.UI.Page;
+    /*class Facebook : System.Web.UI.Page;
     {
 
         public void CheckAuthorization()
@@ -51,9 +51,7 @@ namespace Nekretninte_Class.facebook
 
                 var client = new FacebookClient(access_token);
 
-                client.Post("/me/feed", new { message = "markhagan.me video tutorial" });
-
-                
+                client.Post("/me/feed", new { message = "markhagan.me video tutorial" });                
             }
-    }
+    }*/
 }
